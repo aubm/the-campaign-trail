@@ -1,0 +1,127 @@
+---
+import { render } from "astro:content";
+import Book from "../../../layouts/Book.astro";
+import { getCampaign, adventureUrl, chapterUrl } from "../../../lib/campaign";
+export async function getStaticPaths() {
+  return (await getCampaign()).flatMap(({ adventure, chapters }) =>
+    chapters.map((chapter, index) => ({
+      params: {
+        adventure: adventure.id,
+        chapter: chapter.id.split("/").at(-1),
+      },
+      props: {
+        adventure,
+        chapters,
+        chapter,
+        previous: chapters[index - 1],
+        next: chapters[index + 1],
+      },
+    })),
+  );
+}
+const { adventure, chapter, chapters, previous, next } = Astro.props;
+const { Content, headings } = await render(chapter);
+---
+
+<Book
+  title={chapter.data.title}
+  description={chapter.data.summary}
+  image={chapter.data.illustration.src}
+>
+  <div class="section-wrap">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">The journal</a>
+      <span aria-hidden="true">/</span>
+      <a href={adventureUrl(adventure.id)}>{adventure.data.title}</a>
+      <span aria-hidden="true">/</span>
+      <span>Chapter {chapter.data.order}</span>
+    </nav>
+  </div>
+  <article>
+    <header class="chapter-header section-wrap">
+      <p class="eyebrow">
+        {adventure.data.title} <span aria-hidden="true">✧</span> Chapter{" "}
+        {String(chapter.data.order).padStart(2, "0")}
+      </p>
+      <h1>{chapter.data.title}</h1>
+      <p class="subtitle">{chapter.data.summary}</p>
+    </header>
+    <figure class="chapter-illustration section-wrap">
+      <img
+        src={chapter.data.illustration.src}
+        alt={chapter.data.illustration.alt}
+        width="1672"
+        height="941"
+        fetchpriority="high"
+      />
+      {chapter.data.illustration.caption && (
+        <figcaption>{chapter.data.illustration.caption}</figcaption>
+      )}
+    </figure>
+    <div class="reading-layout section-wrap">
+      <aside class="reading-sidebar">
+        <details open>
+          <summary>In this adventure</summary>
+          <ol>
+            {chapters.map((item) => (
+              <li>
+                <a
+                  href={chapterUrl(item)}
+                  aria-current={item.id === chapter.id ? "page" : undefined}
+                >
+                  <span>{String(item.data.order).padStart(2, "0")}</span>
+                  {item.data.title}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </details>
+        {headings.filter((h) => h.depth === 2).length > 0 && (
+          <nav aria-label="On this page">
+            <p class="eyebrow">On this page</p>
+            {headings
+              .filter((h) => h.depth === 2)
+              .map((h) => (
+                <a href={`#${h.slug}`}>{h.text}</a>
+              ))}
+          </nav>
+        )}
+        <a class="text-link" href={adventureUrl(adventure.id)}>
+          ← Adventure contents
+        </a>
+      </aside>
+      <div>
+        <div class="prose chapter-prose">
+          <p class="sample-label">
+            Sample chapter · The real chronicle is still to come
+          </p>
+          <Content />
+        </div>
+        <nav class="chapter-pagination" aria-label="Chapter navigation">
+          {previous ? (
+            <a rel="prev" href={chapterUrl(previous)}>
+              <span class="eyebrow">← Previous chapter</span>
+              <strong>{previous.data.title}</strong>
+            </a>
+          ) : (
+            <a href={adventureUrl(adventure.id)}>
+              <span class="eyebrow">← Back to</span>
+              <strong>Adventure contents</strong>
+            </a>
+          )}
+          {next ? (
+            <a rel="next" href={chapterUrl(next)}>
+              <span class="eyebrow">Next chapter →</span>
+              <strong>{next.data.title}</strong>
+            </a>
+          ) : (
+            <a href="/#adventures">
+              <span class="eyebrow">The story pauses here</span>
+              <strong>Explore another adventure →</strong>
+            </a>
+          )}
+        </nav>
+      </div>
+    </div>
+  </article>
+</Book>
