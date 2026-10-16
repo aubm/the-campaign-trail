@@ -108,5 +108,21 @@ const canonical = new URL(paths[locale], Astro.site);
       <p>{t.footer}</p>
       <span>{t.independent}</span>
     </footer>
+    <script>
+      function openExternalLinksInNewTabs() {
+        for (const link of document.querySelectorAll<HTMLAnchorElement>("a[href]")) {
+          const url = new URL(link.href, window.location.href);
+          if (
+            (url.protocol === "https:" || url.protocol === "http:") &&
+            url.origin !== window.location.origin
+          ) {
+            link.target = "_blank";
+            link.relList.add("noopener", "noreferrer");
+          }
+        }
+      }
+      openExternalLinksInNewTabs();
+      document.addEventListener("astro:page-load", openExternalLinksInNewTabs);
+    </script>
   </body>
 </html>
