@@ -7,8 +7,9 @@ const illustration = z.object({
   caption: z.string().optional(),
 });
 const adventures = defineCollection({
-  loader: glob({ pattern: "*.md", base: "./src/content/adventures" }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/adventures" }),
   schema: z.object({
+    locale: z.enum(["en", "fr"]).default("en"),
     title: z.string(),
     subtitle: z.string(),
     description: z.string(),
@@ -20,6 +21,7 @@ const adventures = defineCollection({
 const chapters = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/chapters" }),
   schema: z.object({
+    locale: z.enum(["en", "fr"]).default("en"),
     adventure: reference("adventures"),
     title: z.string(),
     summary: z.string(),

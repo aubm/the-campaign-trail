@@ -1,18 +1,15 @@
 ---
-import Book from "../layouts/Book.astro";
+import NotFound from "../components/NotFound.astro";
 ---
 
-<Book title="A turn off the trail">
-  <section class="lost-page section-wrap">
-    <p class="eyebrow">404 · Uncharted territory</p>
-    <h1>
-      This road fades
-      <br />
-      into the mist.
-    </h1>
-    <p>The page you’re looking for isn’t in this journal.</p>
-    <a class="button" href="/">
-      Return to the trail →
-    </a>
-  </section>
-</Book>
+<NotFound locale="en" />
+
+<script>
+  // GitHub Pages always serves the root 404 document for unknown paths.
+  if (
+    window.location.pathname.startsWith("/fr/") &&
+    window.location.pathname !== "/fr/404/"
+  ) {
+    window.location.replace("/fr/404/");
+  }
+</script>

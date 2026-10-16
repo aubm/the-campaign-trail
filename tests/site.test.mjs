@@ -61,9 +61,11 @@ test("chapter order and previous/next boundaries stay inside their adventure", a
       .map((c) => c.slug);
   }
   for (const [adventure, chapters] of Object.entries(adventures)) {
+    const prefix = adventure.startsWith("fr/") ? "/fr" : "";
+    const slug = adventure.replace(/^fr\//, "");
     for (let i = 0; i < chapters.length; i++) {
       const html = await readFile(
-        join(root, "adventures", adventure, chapters[i], "index.html"),
+        join(root, prefix, "adventures", slug, chapters[i], "index.html"),
         "utf8",
       );
       for (const [rel, expected] of [
@@ -75,7 +77,7 @@ test("chapter order and previous/next boundaries stay inside their adventure", a
         )?.[1];
         assert.equal(
           target,
-          expected ? `/adventures/${adventure}/${expected}/` : undefined,
+          expected ? `${prefix}/adventures/${slug}/${expected}/` : undefined,
         );
       }
       assert.equal((html.match(/aria-current="page"/g) || []).length, 1);
@@ -91,4 +93,102 @@ test("production domain survives the build", async () => {
     await readFile(join(root, "index.html"), "utf8"),
     /rel="canonical" href="https:\/\/the-campaign-trail\.aubm\.net\/"/,
   );
+});
+
+const attribute = (tag, name) =>
+  tag.match(new RegExp(`\\b${name}="([^"]*)"`))?.[1];
+const fileForUrl = (url) =>
+  join(root, url.endsWith("/") ? `${url}index.html` : url);
+
+test("every page has working reciprocal language switches, language metadata, and a distinct translation", async () => {
+  for (const file of (await files(root)).filter((f) => f.endsWith(".html"))) {
+    const html = await readFile(file, "utf8");
+    const relative = file.slice(root.length).replace(/index\.html$/, "");
+    const language = relative.startsWith("/fr/") ? "fr" : "en";
+    assert.ok(
+      html.includes(`<html lang="${language}">`),
+      `${relative}: incorrect document language`,
+    );
+    const canonicalTag = html.match(/<link\b[^>]*rel="canonical"[^>]*>/)?.[0];
+    assert.equal(
+      attribute(canonicalTag, "href"),
+      `https://the-campaign-trail.aubm.net${relative}`,
+    );
+    const alternateTags = [
+      ...html.matchAll(/<link\b[^>]*rel="alternate"[^>]*>/g),
+    ].map((m) => m[0]);
+    const languageNav = html.match(
+      /<nav class="language-switch"[^>]*>([\s\S]*?)<\/nav>/,
+    )?.[1];
+    assert.ok(languageNav, `${relative}: missing language switcher`);
+    for (const locale of ["en", "fr"]) {
+      const tag = alternateTags.find(
+        (t) => attribute(t, "hreflang") === locale,
+      );
+      assert.ok(tag, `${relative}: missing ${locale} alternate`);
+      const url = new URL(attribute(tag, "href"));
+      const target = await readFile(fileForUrl(url.pathname), "utf8");
+      assert.ok(target.includes(`<html lang="${locale}">`));
+      const link = [...languageNav.matchAll(/<a\b[^>]*>/g)]
+        .map((m) => m[0])
+        .find((t) => attribute(t, "hreflang") === locale);
+      assert.equal(
+        attribute(link, "href"),
+        url.pathname,
+        "switcher and alternate must agree",
+      );
+      assert.equal(
+        attribute(link, "aria-current"),
+        locale === language ? "true" : undefined,
+      );
+      if (locale !== language) {
+        const reverse = [
+          ...target.matchAll(/<link\b[^>]*rel="alternate"[^>]*>/g),
+        ]
+          .map((m) => m[0])
+          .find((t) => attribute(t, "hreflang") === language);
+        assert.equal(
+          attribute(reverse, "href"),
+          `https://the-campaign-trail.aubm.net${relative}`,
+          "translations must link back to the same page",
+        );
+        assert.notEqual(
+          target.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1],
+          html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1],
+          "translated pages must have translated titles",
+        );
+      }
+    }
+    for (const [, tag] of html.matchAll(/(<a\b[^>]*>)/g)) {
+      const href = attribute(tag, "href");
+      if (!href?.startsWith("/") || attribute(tag, "hreflang")) continue;
+      assert.equal(
+        href.startsWith("/fr/"),
+        language === "fr",
+        `${relative}: navigation changes language at ${href}`,
+      );
+    }
+  }
+});
+
+test("French chapters contain translated prose, image descriptions, and navigation labels", async () => {
+  const html = await readFile(
+    join(root, "fr/adventures/embers-of-the-north/the-old-road/index.html"),
+    "utf8",
+  );
+  for (const text of [
+    "La Vieille Route",
+    "Un inconnu à la croisée des chemins",
+    "Chapitre suivant",
+    "Sommaire de l’aventure",
+    "Des voyageurs en cape",
+  ])
+    assert.ok(html.includes(text), `Missing French content: ${text}`);
+  for (const text of [
+    "A stranger at the crossroads",
+    "Next chapter",
+    "Sample chapter",
+    "Travelers follow",
+  ])
+    assert.ok(!html.includes(text), `Untranslated English content: ${text}`);
 });

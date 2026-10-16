@@ -4,33 +4,56 @@ import "@fontsource/cormorant-garamond/600.css";
 import "@fontsource/source-serif-4/400.css";
 import "@fontsource/source-serif-4/400-italic.css";
 import "../styles/book.css";
+import { localizePath, messages, type Locale } from "../lib/i18n";
 interface Props {
+  locale?: Locale;
+  alternatePaths?: Record<Locale, string>;
   title?: string;
   description?: string;
   image?: string;
 }
 const {
   title,
-  description = "Stories from the table. An illustrated journal of adventures, unlikely heroes, and roads less traveled.",
+  locale = "en",
+  alternatePaths,
+  description,
   image = "/images/the-long-road.webp",
 } = Astro.props;
+const t = messages[locale];
+const pageDescription = description ?? t.description;
+const paths = alternatePaths ?? {
+  en: localizePath(Astro.url.pathname, "en"),
+  fr: localizePath(Astro.url.pathname, "fr"),
+};
 const pageTitle = title
   ? `${title} · The Campaign Trail`
-  : "The Campaign Trail · Stories from the table";
-const canonical = new URL(Astro.url.pathname, Astro.site);
+  : `The Campaign Trail · ${t.tagline}`;
+const canonical = new URL(paths[locale], Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={pageDescription} />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={new URL(paths.en, Astro.site)} />
+    <link rel="alternate" hreflang="fr" href={new URL(paths.fr, Astro.site)} />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(paths.en, Astro.site)}
+    />
+    <meta property="og:locale" content={locale === "fr" ? "fr_CA" : "en_CA"} />
+    <meta
+      property="og:locale:alternate"
+      content={locale === "fr" ? "en_CA" : "fr_CA"}
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={pageDescription} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL(image, Astro.site)} />
@@ -38,26 +61,49 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   </head>
   <body>
     <a href="#main" class="skip-link">
-      Skip to content
+      {t.skip}
     </a>
     <header class="site-header">
-      <a class="wordmark" href="/">
+      <a class="wordmark" href={localizePath("/", locale)}>
         <span class="seal" aria-hidden="true">
           ✧
         </span>{" "}
         The Campaign Trail
       </a>
-      <a class="library-link" href="/#adventures">
-        The adventures <span aria-hidden="true">↗</span>
-      </a>
+      <div class="header-links">
+        <a class="library-link" href={localizePath("/#adventures", locale)}>
+          {t.adventures} <span aria-hidden="true">↗</span>
+        </a>
+        <nav class="language-switch" aria-label={t.language}>
+          <a
+            href={paths.en}
+            lang="en"
+            hreflang="en"
+            aria-label="English"
+            aria-current={locale === "en" ? "true" : undefined}
+          >
+            EN
+          </a>
+          <span aria-hidden="true">/</span>
+          <a
+            href={paths.fr}
+            lang="fr"
+            hreflang="fr"
+            aria-label="Français"
+            aria-current={locale === "fr" ? "true" : undefined}
+          >
+            FR
+          </a>
+        </nav>
+      </div>
     </header>
     <main id="main">
       <slot />
     </main>
     <footer class="site-footer">
-      <a href="/">The Campaign Trail</a>
-      <p>Rolled at the table. Remembered on the page.</p>
-      <span>An independent D&D campaign journal.</span>
+      <a href={localizePath("/", locale)}>The Campaign Trail</a>
+      <p>{t.footer}</p>
+      <span>{t.independent}</span>
     </footer>
   </body>
 </html>
