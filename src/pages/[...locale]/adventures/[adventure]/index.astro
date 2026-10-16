@@ -1,32 +1,50 @@
 ---
 import { render } from "astro:content";
-import Book from "../../../layouts/Book.astro";
-import { getCampaign, chapterUrl } from "../../../lib/campaign";
+import Book from "../../../../layouts/Book.astro";
+import { getCampaign, chapterUrl } from "../../../../lib/campaign";
+import {
+  locales,
+  contentKey,
+  localizePath,
+  messages,
+  chapterCount,
+} from "../../../../lib/i18n";
 export async function getStaticPaths() {
-  return (await getCampaign()).map((item) => ({
-    params: { adventure: item.adventure.id },
-    props: item,
-  }));
+  return (
+    await Promise.all(
+      locales.map(async (locale) =>
+        (await getCampaign(locale)).map((item) => ({
+          params: {
+            locale: locale === "en" ? undefined : locale,
+            adventure: contentKey(item.adventure.id),
+          },
+          props: { ...item, locale },
+        })),
+      ),
+    )
+  ).flat();
 }
-const { adventure, chapters } = Astro.props;
+const { adventure, chapters, locale } = Astro.props;
+const t = messages[locale];
 const { Content } = await render(adventure);
 ---
 
 <Book
+  locale={locale}
   title={adventure.data.title}
   description={adventure.data.description}
   image={adventure.data.illustration.src}
 >
   <div class="section-wrap">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">The journal</a>
+    <nav class="breadcrumbs" aria-label={t.breadcrumb}>
+      <a href={localizePath("/", locale)}>{t.journal}</a>
       <span aria-hidden="true">/</span>
       <span>{adventure.data.title}</span>
     </nav>
   </div>
   <section class="adventure-intro section-wrap">
     <p class="eyebrow">
-      {adventure.data.setting} · {chapters.length} chapters
+      {adventure.data.setting} · {chapterCount(chapters.length, locale)}
     </p>
     <h1>{adventure.data.title}</h1>
     <p class="subtitle">{adventure.data.subtitle}</p>
@@ -45,17 +63,17 @@ const { Content } = await render(adventure);
   </section>
   <section class="contents-layout section-wrap">
     <div class="prose">
-      <p class="eyebrow">The adventure</p>
+      <p class="eyebrow">{t.adventure}</p>
       <Content />
       {chapters[0] && (
         <a class="button" href={chapterUrl(chapters[0])}>
-          Begin the story <span aria-hidden="true">→</span>
+          {t.begin} <span aria-hidden="true">→</span>
         </a>
       )}
     </div>
     <div class="contents">
-      <p class="eyebrow">Turn the page</p>
-      <h2>Contents</h2>
+      <p class="eyebrow">{t.turnPage}</p>
+      <h2>{t.contents}</h2>
       <ol>
         {chapters.map((chapter) => (
           <li>
@@ -72,7 +90,7 @@ const { Content } = await render(adventure);
           </li>
         ))}
       </ol>
-      {!chapters.length && <p>The first chapter is yet to be written.</p>}
+      {!chapters.length && <p>{t.empty}</p>}
     </div>
   </section>
 </Book>

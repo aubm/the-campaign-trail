@@ -81,3 +81,20 @@ The generated site includes `CNAME`. Astro's `site` is `https://the-campaign-tra
 ## Artwork
 
 `public/images/the-long-road.webp` is an original AI-generated concept illustration, made with the built-in image generation tool. It establishes a painterly fantasy direction without reusing official artwork. The full prompt is preserved in `ART_DIRECTION.md` for iteration.
+
+## English and French
+
+English keeps the original URLs (`/`, `/adventures/.../`). French uses the same paths under `/fr/`. The EN / FR switcher opens the equivalent page; normal navigation stays in the selected language. The site name stays **The Campaign Trail** in both languages. Language switching uses ordinary links and does not require JavaScript, cookies, or automatic browser-language detection.
+
+Interface text is in `src/lib/i18n.ts`. Content translations are separate Markdown files with matching filenames:
+
+| Content   | English                                                | French                                                    |
+| --------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| Adventure | `src/content/adventures/my-adventure.md`               | `src/content/adventures/fr/my-adventure.md`               |
+| Chapter   | `src/content/chapters/my-adventure/a-new-beginning.md` | `src/content/chapters/fr/my-adventure/a-new-beginning.md` |
+
+For each new adventure or chapter, add **both versions** in the same PR. English defaults to `locale: en`. French must set `locale: fr`; a French chapter's adventure reference must include the prefix, e.g. `adventure: fr/my-adventure`. Translate titles, summaries, prose, captions, and image alt text. Images can be shared or differ between languages. Keep filenames and `order` values aligned so readers switch to the same point in the story.
+
+The build rejects missing translation pairs, mismatched orders, and chapters referencing an adventure in a different language. Tests check reciprocal language links, canonical URLs, locale metadata, and chapter navigation in both languages. Each translated page has its own canonical URL and `hreflang` links.
+
+GitHub Pages serves a single root 404 document. It includes the language switcher; a small script sends unknown `/fr/` paths to the French error page. Without JavaScript, the English error page still offers the French version.

@@ -1,0 +1,28 @@
+---
+import Book from "../layouts/Book.astro";
+import { messages, localizePath, type Locale } from "../lib/i18n";
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = messages[locale];
+---
+
+<Book
+  locale={locale}
+  title={t.notFoundTitle}
+  alternatePaths={{ en: "/404.html", fr: "/fr/404/" }}
+>
+  <section class="lost-page section-wrap">
+    <p class="eyebrow">{t.notFoundEyebrow}</p>
+    <h1>
+      {t.notFoundHeading[0]}
+      <br />
+      {t.notFoundHeading[1]}
+    </h1>
+    <p>{t.notFoundText}</p>
+    <a class="button" href={localizePath("/", locale)}>
+      {t.return} →
+    </a>
+  </section>
+</Book>
