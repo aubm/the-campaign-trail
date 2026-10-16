@@ -13,7 +13,8 @@ const en = {
   description:
     "Stories from the table. An illustrated journal of adventures, unlikely heroes, and roads less traveled.",
   skip: "Skip to content",
-  adventures: "The adventures",
+  adventures: "Chronicles",
+  publications: "Adventures to play",
   language: "Language",
   footer: "Rolled at the table. Remembered on the page.",
   independent: "An independent D&D campaign journal.",
@@ -27,7 +28,7 @@ const en = {
   ],
   openJournal: "Open the journal",
   collected: "The collected chronicles",
-  choose: "Choose an adventure",
+  choose: "Read the chronicles",
   libraryText: [
     "Different worlds. Different companions.",
     "The same call to adventure.",
@@ -68,7 +69,8 @@ const fr: typeof en = {
   description:
     "Récits autour de la table. Un journal illustré d’aventures, de héros improbables et de chemins de traverse.",
   skip: "Aller au contenu",
-  adventures: "Les aventures",
+  adventures: "Chroniques",
+  publications: "Aventures à jouer",
   language: "Langue",
   footer: "Vécu autour de la table. Raconté au fil des pages.",
   independent: "Un journal indépendant de campagnes de D&D.",
@@ -82,7 +84,7 @@ const fr: typeof en = {
   ],
   openJournal: "Ouvrir le journal",
   collected: "Au fil des chroniques",
-  choose: "Choisissez une aventure",
+  choose: "Lisez les chroniques",
   libraryText: [
     "D’autres mondes. D’autres compagnons.",
     "Le même appel de l’aventure.",

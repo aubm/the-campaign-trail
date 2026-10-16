@@ -74,6 +74,9 @@ const canonical = new URL(paths[locale], Astro.site);
         <a class="library-link" href={localizePath("/#adventures", locale)}>
           {t.adventures} <span aria-hidden="true">↗</span>
         </a>
+        <a class="library-link" href={localizePath("/play/", locale)}>
+          {t.publications}
+        </a>
         <nav class="language-switch" aria-label={t.language}>
           <a
             href={paths.en}

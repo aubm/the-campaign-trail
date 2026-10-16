@@ -153,9 +153,9 @@ test("every page has working reciprocal language switches, language metadata, an
           "translations must link back to the same page",
         );
         assert.notEqual(
-          target.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1],
-          html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1],
-          "translated pages must have translated titles",
+          target.match(/<meta name="description" content="([^"]*)"/)?.[1],
+          html.match(/<meta name="description" content="([^"]*)"/)?.[1],
+          "translated pages must have translated descriptions (product titles may remain original)",
         );
       }
     }
@@ -191,4 +191,30 @@ test("French chapters contain translated prose, image descriptions, and navigati
     "Travelers follow",
   ])
     assert.ok(!html.includes(text), `Untranslated English content: ${text}`);
+});
+
+test("published adventures connect home, catalogue, and product pages in both languages", async () => {
+  for (const prefix of ["", "/fr"]) {
+    const detailPath = `${prefix}/play/escape-the-dawn-warrior-island/`;
+    for (const route of [`${prefix}/`, `${prefix}/play/`]) {
+      const html = await readFile(fileForUrl(route), "utf8");
+      assert.ok(html.includes(`href="${detailPath}"`));
+    }
+    const detail = await readFile(fileForUrl(detailPath), "utf8");
+    assert.match(
+      detail,
+      /href="https:\/\/www.dmsguild.com\/(?:en|fr)\/product\/450203\/escape-the-dawn-warrior-island"/,
+    );
+    assert.ok(
+      detail.includes(
+        'href="https://d1vzi28wh99zvq.cloudfront.net/pdf_previews/450203-sample.pdf"',
+      ),
+    );
+    assert.ok(detail.includes(prefix ? "PDF en anglais" : "English PDF"));
+    assert.ok(detail.includes('src="/images/dawn-warrior-island.webp"'));
+    assert.ok(
+      !detail.includes('rel="next"'),
+      "a publication is not a journal chapter",
+    );
+  }
 });

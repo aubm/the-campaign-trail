@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { publicationUrl } from "../lib/publications";
+interface Props {
+  publication: CollectionEntry<"publications">;
+}
+const { publication } = Astro.props;
+const { data } = publication;
+const fr = data.locale === "fr";
+---
+
+<article class="publication-card">
+  <a
+    class="publication-card-art"
+    href={publicationUrl(publication)}
+    aria-label={data.title}
+  >
+    <img
+      src={data.illustration.src}
+      alt={data.illustration.alt}
+      width="1672"
+      height="941"
+      loading="lazy"
+    />
+    <span class="publication-stamp">
+      {fr ? "Publié sur DMs Guild" : "Published on DMs Guild"}
+    </span>
+  </a>
+  <div class="publication-card-copy">
+    <p class="eyebrow">
+      {data.system} <span aria-hidden="true">·</span>{" "}
+      {fr ? "Une aventure à mener" : "An adventure to run"}
+    </p>
+    <h3>
+      <a href={publicationUrl(publication)}>{data.title}</a>
+    </h3>
+    <p>{data.description}</p>
+    <ul class="publication-tags" aria-label={fr ? "En bref" : "At a glance"}>
+      <li>{data.duration}</li>
+      <li>
+        {fr ? "Niveaux" : "Levels"} {data.levels}
+      </li>
+      <li>{fr ? "Initiation" : "Beginner-friendly"}</li>
+    </ul>
+    <a class="text-link" href={publicationUrl(publication)}>
+      {fr ? "Découvrir l’aventure" : "Discover the adventure"}{" "}
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</article>

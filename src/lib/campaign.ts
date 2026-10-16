@@ -5,7 +5,7 @@ export const adventureUrl = (id: string, locale: Locale = "en") =>
 export const chapterUrl = (chapter: CollectionEntry<"chapters">) =>
   `${adventureUrl(chapter.data.adventure.id, chapter.data.locale)}${chapter.id.split("/").at(-1)}/`;
 
-function validateTranslations(
+export function validateTranslations(
   entries: { id: string; data: { locale: Locale; order: number } }[],
 ) {
   const byId = new Map(entries.map((entry) => [entry.id, entry]));

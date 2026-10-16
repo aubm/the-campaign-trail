@@ -98,3 +98,11 @@ For each new adventure or chapter, add **both versions** in the same PR. English
 The build rejects missing translation pairs, mismatched orders, and chapters referencing an adventure in a different language. Tests check reciprocal language links, canonical URLs, locale metadata, and chapter navigation in both languages. Each translated page has its own canonical URL and `hreflang` links.
 
 GitHub Pages serves a single root 404 document. It includes the language switcher; a small script sends unknown `/fr/` paths to the French error page. Without JavaScript, the English error page still offers the French version.
+
+## Adventures to play
+
+`/play/` and `/fr/play/` showcase published, playable adventures separately from the campaign chronicles. The homepage features the first publication by `order`. Add both `src/content/publications/my-adventure.md` and `src/content/publications/fr/my-adventure.md` to list another publication; use the existing pair as a template.
+
+Required frontmatter: `locale`, `title`, `subtitle`, `description`, unique positive `order`, `author`, `system`, `duration`, `levels`, `setting`, `shopUrl`, `previewUrl`, and `illustration` (`src`, `alt`, optional `caption`). Keep the same filename and order in both languages; the official product title may stay in its original language. The Markdown body is the presentation, not the full adventure. Localized catalogue, detail pages, language links, and navigation are generated automatically.
+
+The first entry is **Escape the Dawn Warrior Island** by Aurélien Baumann. Its 2–3-hour duration, levels 1–2, shipwreck premise, and possible transition into _Tomb of Annihilation_ are supported by the publisher's [public English preview](https://d1vzi28wh99zvq.cloudfront.net/pdf_previews/450203-sample.pdf). Both languages link to DMs Guild and label the preview as an English PDF. The site does not mirror the product PDF or quote a potentially changing price. The new island illustration is original presentation artwork, not the published product cover.

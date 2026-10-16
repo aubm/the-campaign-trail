@@ -1,4 +1,7 @@
 ---
+import PublicationCard from "../../components/PublicationCard.astro";
+import { getPublications } from "../../lib/publications";
+import { localizePath } from "../../lib/i18n";
 import Book from "../../layouts/Book.astro";
 import { getCampaign, adventureUrl, chapterUrl } from "../../lib/campaign";
 import { locales, messages, chapterCount, type Locale } from "../../lib/i18n";
@@ -11,6 +14,8 @@ export function getStaticPaths() {
 const { locale } = Astro.props as { locale: Locale };
 const t = messages[locale];
 const campaigns = await getCampaign(locale);
+const publications = await getPublications(locale);
+const fr = locale === "fr";
 ---
 
 <Book locale={locale}>
@@ -43,6 +48,22 @@ const campaigns = await getCampaign(locale);
     <span class="cover-note">
       The Campaign Trail &nbsp; / &nbsp; {t.tagline}
     </span>
+  </section>
+  <section class="play-feature section-wrap" aria-labelledby="play-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">
+          {fr ? "À votre tour de lancer les dés" : "Your turn to roll the dice"}
+        </p>
+        <h2 id="play-title">{t.publications}</h2>
+      </div>
+      <a class="text-link" href={localizePath("/play/", locale)}>
+        {fr ? "Découvrir les scénarios" : "Explore the adventures"} →
+      </a>
+    </div>
+    {publications.slice(0, 1).map((publication) => (
+      <PublicationCard publication={publication} />
+    ))}
   </section>
   <section id="adventures" class="library section-wrap">
     <div class="section-heading">
