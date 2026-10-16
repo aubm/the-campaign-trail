@@ -106,11 +106,28 @@ const canonical = new URL(paths[locale], Astro.site);
     <footer class="site-footer">
       <a href={localizePath("/", locale)}>The Campaign Trail</a>
       <p>{t.footer}</p>
-      <span>{t.independent}</span>
+      <span>
+        {t.independent}
+        <br />
+        <a
+          href="https://www.aubm.net/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={
+            locale === "fr"
+              ? "Site personnel d’Aurélien Baumann"
+              : "Aurélien Baumann’s personal website"
+          }
+        >
+          aubm.net <span aria-hidden="true">↗</span>
+        </a>
+      </span>
     </footer>
     <script>
       function openExternalLinksInNewTabs() {
-        for (const link of document.querySelectorAll<HTMLAnchorElement>("a[href]")) {
+        for (const link of document.querySelectorAll<HTMLAnchorElement>(
+          "a[href]",
+        )) {
           const url = new URL(link.href, window.location.href);
           if (
             (url.protocol === "https:" || url.protocol === "http:") &&
