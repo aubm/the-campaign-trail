@@ -780,3 +780,215 @@ h2[id] {
     max-width: 36ch;
   }
 }
+
+/* Published adventures have their own catalogue, separate from campaign journals. */
+.play-feature {
+  padding-block: 72px;
+  border-bottom: 1px solid var(--line);
+}
+.publication-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--line);
+  background: #eee5d3;
+}
+.publication-card-art {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+}
+.publication-card-art img {
+  height: 100%;
+  object-fit: cover;
+}
+.publication-stamp {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  width: fit-content;
+  padding: 9px 13px;
+  background: var(--paper);
+  color: var(--red);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+}
+.publication-card-copy {
+  padding: 38px;
+  align-self: center;
+}
+.publication-card-copy h3 {
+  font-size: clamp(2.2rem, 3.6vw, 3.5rem);
+  margin-block: 12px 18px;
+}
+.publication-card-copy h3 a {
+  text-decoration: none;
+}
+.publication-card-copy > p:not(.eyebrow) {
+  font-size: 0.91rem;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding: 18px 0;
+  margin: 18px 0 22px;
+  border-block: 1px solid var(--line);
+  list-style: none;
+  font-size: 0.72rem;
+  color: var(--red);
+}
+.play-intro {
+  text-align: center;
+  padding-block: 75px 55px;
+}
+.play-intro h1 {
+  margin-block: 14px 20px;
+}
+.play-intro > p:last-child {
+  max-width: 680px;
+  margin: 22px auto 0;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.publication-catalog {
+  display: grid;
+  gap: 36px;
+}
+.journal-crosslink {
+  padding-block: 48px 75px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.journal-crosslink a {
+  color: var(--red);
+}
+.publication-heading {
+  padding-block: 24px 42px;
+}
+.publication-heading h1 {
+  max-width: 950px;
+  margin-block: 16px 22px;
+}
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+.publication-hero img {
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+}
+.publication-hero figcaption {
+  font-size: 0.7rem;
+  color: var(--muted);
+  padding-top: 12px;
+  line-height: 1.6;
+}
+.publication-body {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 75px;
+  padding-block: 65px 85px;
+}
+.publication-facts dl {
+  margin: 18px 0 24px;
+}
+.publication-facts dl > div {
+  padding-block: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.publication-facts dt {
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+.publication-facts dd {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.publication-purpose {
+  font-style: italic;
+  color: var(--red);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.publication-closing {
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding-top: 22px;
+}
+.publication-closing .button {
+  color: #fff4df;
+  font-style: normal;
+}
+@media (max-width: 900px) {
+  .header-links {
+    gap: 16px;
+  }
+  .publication-card-copy {
+    padding: 26px;
+  }
+  .publication-body {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .site-header {
+    height: auto;
+    flex-wrap: wrap;
+    padding-block: 18px;
+    gap: 18px;
+  }
+  .header-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .library-link {
+    display: inline-flex;
+  }
+  .publication-card,
+  .publication-body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .publication-card-art {
+    min-height: 0;
+  }
+  .publication-card-art img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .play-feature {
+    padding-block: 45px;
+  }
+  .play-feature .section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .play-intro {
+    padding-block: 48px 36px;
+  }
+  .publication-heading h1 {
+    font-size: clamp(2.6rem, 10vw, 4rem);
+  }
+  .publication-hero img {
+    aspect-ratio: 4 / 3;
+  }
+  .publication-body {
+    padding-block: 35px 60px;
+    gap: 40px;
+  }
+  .publication-facts dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+  }
+}

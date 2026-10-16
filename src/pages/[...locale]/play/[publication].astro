@@ -1,0 +1,111 @@
+---
+import { render } from "astro:content";
+import Book from "../../../layouts/Book.astro";
+import { getPublications } from "../../../lib/publications";
+import { locales, messages, contentKey, localizePath } from "../../../lib/i18n";
+export async function getStaticPaths() {
+  return (
+    await Promise.all(
+      locales.map(async (locale) =>
+        (await getPublications(locale)).map((publication) => ({
+          params: {
+            locale: locale === "en" ? undefined : locale,
+            publication: contentKey(publication.id),
+          },
+          props: { locale, publication },
+        })),
+      ),
+    )
+  ).flat();
+}
+const { locale, publication } = Astro.props;
+const { data } = publication;
+const fr = locale === "fr";
+const { Content } = await render(publication);
+const facts = [
+  [fr ? "Système" : "System", data.system],
+  [fr ? "Durée" : "Duration", data.duration],
+  [fr ? "Niveaux des personnages" : "Character levels", data.levels],
+  [fr ? "Univers" : "Setting", data.setting],
+];
+---
+
+<Book
+  locale={locale}
+  title={data.title}
+  description={data.description}
+  image={data.illustration.src}
+>
+  <div class="section-wrap">
+    <nav class="breadcrumbs" aria-label={messages[locale].breadcrumb}>
+      <a href={localizePath("/", locale)}>{messages[locale].journal}</a>
+      <span aria-hidden="true">/</span>
+      <a href={localizePath("/play/", locale)}>
+        {messages[locale].publications}
+      </a>
+    </nav>
+  </div>
+  <header class="publication-heading section-wrap">
+    <p class="eyebrow">
+      {fr ? "Une aventure de" : "An adventure by"} {data.author}
+    </p>
+    <h1>{data.title}</h1>
+    <p class="subtitle">{data.subtitle}</p>
+    <div class="publication-actions">
+      <a class="button" href={data.shopUrl}>
+        {fr ? "Voir sur DMs Guild" : "View on DMs Guild"}{" "}
+        <span aria-hidden="true">↗</span>
+      </a>
+      <a class="text-link" href={data.previewUrl}>
+        {fr
+          ? "Feuilleter l’aperçu public (PDF en anglais)"
+          : "Read the public preview (English PDF)"}{" "}
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+  <figure class="publication-hero section-wrap">
+    <img
+      src={data.illustration.src}
+      alt={data.illustration.alt}
+      width="1672"
+      height="941"
+      fetchpriority="high"
+    />
+    <figcaption>{data.illustration.caption}</figcaption>
+  </figure>
+  <div class="publication-body section-wrap">
+    <aside class="publication-facts">
+      <p class="eyebrow">{fr ? "Préparer la partie" : "Plan your session"}</p>
+      <dl>
+        {facts.map(([label, value]) => (
+          <div>
+            <dt>{label}</dt>
+            <dd>{value}</dd>
+          </div>
+        ))}
+      </dl>
+      <p class="publication-purpose">
+        {fr
+          ? "Une initiation au jeu, ou une ouverture vers La Tombe de l’Annihilation."
+          : "An introduction to the game, or an opening into Tomb of Annihilation."}
+      </p>
+    </aside>
+    <article class="prose">
+      <Content />
+      <div class="publication-closing">
+        <p>
+          {fr
+            ? "Le prochain chapitre se jouera à votre table."
+            : "The next chapter happens at your table."}
+        </p>
+        <a class="button" href={data.shopUrl}>
+          {fr
+            ? "Retrouver l’aventure sur DMs Guild"
+            : "Find the adventure on DMs Guild"}{" "}
+          ↗
+        </a>
+      </div>
+    </article>
+  </div>
+</Book>

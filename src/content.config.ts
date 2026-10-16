@@ -29,4 +29,22 @@ const chapters = defineCollection({
     illustration,
   }),
 });
-export const collections = { adventures, chapters };
+const publications = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/publications" }),
+  schema: z.object({
+    locale: z.enum(["en", "fr"]).default("en"),
+    title: z.string(),
+    subtitle: z.string(),
+    description: z.string(),
+    order: z.number().int().positive(),
+    author: z.string(),
+    system: z.string(),
+    duration: z.string(),
+    levels: z.string(),
+    setting: z.string(),
+    shopUrl: z.url(),
+    previewUrl: z.url(),
+    illustration,
+  }),
+});
+export const collections = { adventures, chapters, publications };
