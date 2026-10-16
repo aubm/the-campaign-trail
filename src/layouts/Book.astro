@@ -1,0 +1,63 @@
+---
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/cormorant-garamond/600.css";
+import "@fontsource/source-serif-4/400.css";
+import "@fontsource/source-serif-4/400-italic.css";
+import "../styles/book.css";
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+const {
+  title,
+  description = "Stories from the table. An illustrated journal of adventures, unlikely heroes, and roads less traveled.",
+  image = "/images/the-long-road.webp",
+} = Astro.props;
+const pageTitle = title
+  ? `${title} · The Campaign Trail`
+  : "The Campaign Trail · Stories from the table";
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta name="theme-color" content="#702e2d" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <a class="wordmark" href="/">
+        <span class="seal" aria-hidden="true">
+          ✧
+        </span>{" "}
+        The Campaign Trail
+      </a>
+      <a class="library-link" href="/#adventures">
+        The adventures <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <a href="/">The Campaign Trail</a>
+      <p>Rolled at the table. Remembered on the page.</p>
+      <span>An independent D&D campaign journal.</span>
+    </footer>
+  </body>
+</html>

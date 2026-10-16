@@ -1,0 +1,78 @@
+---
+import { render } from "astro:content";
+import Book from "../../../layouts/Book.astro";
+import { getCampaign, chapterUrl } from "../../../lib/campaign";
+export async function getStaticPaths() {
+  return (await getCampaign()).map((item) => ({
+    params: { adventure: item.adventure.id },
+    props: item,
+  }));
+}
+const { adventure, chapters } = Astro.props;
+const { Content } = await render(adventure);
+---
+
+<Book
+  title={adventure.data.title}
+  description={adventure.data.description}
+  image={adventure.data.illustration.src}
+>
+  <div class="section-wrap">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">The journal</a>
+      <span aria-hidden="true">/</span>
+      <span>{adventure.data.title}</span>
+    </nav>
+  </div>
+  <section class="adventure-intro section-wrap">
+    <p class="eyebrow">
+      {adventure.data.setting} · {chapters.length} chapters
+    </p>
+    <h1>{adventure.data.title}</h1>
+    <p class="subtitle">{adventure.data.subtitle}</p>
+    <figure class="panorama">
+      <img
+        src={adventure.data.illustration.src}
+        alt={adventure.data.illustration.alt}
+        width="1672"
+        height="941"
+        fetchpriority="high"
+      />
+      {adventure.data.illustration.caption && (
+        <figcaption>{adventure.data.illustration.caption}</figcaption>
+      )}
+    </figure>
+  </section>
+  <section class="contents-layout section-wrap">
+    <div class="prose">
+      <p class="eyebrow">The adventure</p>
+      <Content />
+      {chapters[0] && (
+        <a class="button" href={chapterUrl(chapters[0])}>
+          Begin the story <span aria-hidden="true">→</span>
+        </a>
+      )}
+    </div>
+    <div class="contents">
+      <p class="eyebrow">Turn the page</p>
+      <h2>Contents</h2>
+      <ol>
+        {chapters.map((chapter) => (
+          <li>
+            <a href={chapterUrl(chapter)}>
+              <span class="chapter-number">
+                {String(chapter.data.order).padStart(2, "0")}
+              </span>
+              <div>
+                <h3>{chapter.data.title}</h3>
+                <p>{chapter.data.summary}</p>
+              </div>
+              <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+      {!chapters.length && <p>The first chapter is yet to be written.</p>}
+    </div>
+  </section>
+</Book>
