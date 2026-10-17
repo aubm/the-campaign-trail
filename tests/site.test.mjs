@@ -177,7 +177,7 @@ test("the Omu prologue replaces the sample and the English version signals trans
   for (const term of ["Les ombres d’Omu", "La cité oubliée", "Sous les pierres", "Le dernier feu", "Talia", "Elle pourrait bien se révéler utile", "Sommaire de l’aventure"]) {
     assert.ok(frChapter.includes(term), `Missing prologue text: ${term}`);
   }
-  assert.ok(frChapter.includes('src="/images/the-long-road.webp"'));
+  assert.ok(frChapter.includes('src="/images/omu-ras-nsi.webp"'));
   assert.ok(!frChapter.includes("Chapitre d’exemple"));
   assert.ok(!frChapter.includes("Dendar"), "The later ritual must stay undisclosed");
 
@@ -205,6 +205,24 @@ test("the Omu prologue replaces the sample and the English version signals trans
     assert.ok(!home.includes("Les Braises du Nord"));
     assert.ok(!home.includes("Embers of the North"));
     assert.equal(await stat(fileForUrl(`${locale}/adventures/embers-of-the-north/`)).catch(() => null), null);
+  }
+});
+
+test("Ras Nsi illustration replaces the placeholder on both adventure and prologue pages", async () => {
+  const imagePath = join(root, "images", "omu-ras-nsi.webp");
+  const webp = await readFile(imagePath);
+  assert.equal(webp.toString("ascii", 0, 4), "RIFF", "WebP RIFF header");
+  assert.equal(webp.toString("ascii", 8, 12), "WEBP", "WebP signature");
+  assert.ok(webp.length < 400_000, "Optimized illustration should be less than 400 KB");
+  for (const prefix of ["", "/fr"]) {
+    for (const page of [
+      `${prefix}/adventures/la-tombe-de-l-annihilation/`,
+      `${prefix}/adventures/la-tombe-de-l-annihilation/prologue/`,
+    ]) {
+      const html = await readFile(fileForUrl(page), "utf8");
+      assert.ok(html.includes('src="/images/omu-ras-nsi.webp"'), `${page} must use the new artwork`);
+      assert.ok(html.includes("Ras Nsi"), `${page} must name Ras Nsi in its caption or alt text`);
+    }
   }
 });
 

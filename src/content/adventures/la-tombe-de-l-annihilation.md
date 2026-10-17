@@ -6,9 +6,9 @@ order: 1
 setting: "Chult · Forgotten Realms"
 translationPending: true
 illustration:
-  src: /images/the-long-road.webp
-  alt: "A winding mountain road toward a distant citadel; temporary artwork, not a depiction of Omu."
-  caption: "Temporary illustration. New artwork for this chronicle will follow."
+  src: /images/omu-ras-nsi.webp
+  alt: "Ras Nsi brandishes a flaming blade in the jungle-covered ruins of Omu, his serpentine body coiled among ancient stones and yuan-ti followers."
+  caption: "Ras Nsi among the ruins of Omu."
 ---
 
 From **July 3, 2021, to September 16, 2023**, we played a Dungeons & Dragons campaign adapted from *Tomb of Annihilation*, an official adventure set in the jungles of Chult in the Forgotten Realms.

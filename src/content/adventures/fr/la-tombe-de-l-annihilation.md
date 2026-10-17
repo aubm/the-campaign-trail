@@ -6,9 +6,9 @@ description: "Notre chronique de La Tombe de l’annihilation, inspirée d’une
 order: 1
 setting: "Chult · Royaumes Oubliés"
 illustration:
-  src: /images/the-long-road.webp
-  alt: "Une route montagneuse mène vers une citadelle lointaine ; illustration temporaire, qui ne représente pas Omu."
-  caption: "Illustration provisoire. Les images propres à cette aventure viendront enrichir le récit."
+  src: /images/omu-ras-nsi.webp
+  alt: "Ras Nsi, au corps serpentin, brandit une lame enflammée parmi les ruines d’Omu envahies par la jungle, devant ses sbires yuan-ti."
+  caption: "Ras Nsi parmi les ruines d’Omu."
 ---
 
 Du **3 juillet 2021 au 16 septembre 2023**, nous avons joué ensemble une campagne de **Donjons & Dragons** adaptée de *La Tombe de l’annihilation* (*Tomb of Annihilation*), une aventure officielle située dans les jungles du **Chult**, au cœur des **Royaumes Oubliés**.
