@@ -6,7 +6,7 @@ order: 0
 sample: false
 translationPending: true
 illustration:
-  src: /images/the-long-road.webp
-  alt: "A winding mountain road and distant citadel, used as temporary artwork until the Omu illustrations are ready."
-  caption: "Temporary illustration; original chapter artwork will follow."
+  src: /images/omu-ras-nsi.webp
+  alt: "Ras Nsi and his fiery blade amid the dense jungle and the ruined temples of Omu."
+  caption: "Ras Nsi in the ruins of Omu."
 ---

@@ -6,9 +6,9 @@ summary: "Prologue · À l’aube, l’expédition d’Erdan découvre Omu. Avan
 order: 0
 sample: false
 illustration:
-  src: /images/the-long-road.webp
-  alt: "Une route de montagne vers une citadelle lointaine, conservée comme illustration provisoire du prologue."
-  caption: "Illustration temporaire. Une peinture consacrée à Omu la remplacera ultérieurement."
+  src: /images/omu-ras-nsi.webp
+  alt: "Ras Nsi armé d’une lame enflammée, au cœur des temples en ruines et de la jungle d’Omu."
+  caption: "Ras Nsi au cœur des ruines d’Omu."
 ---
 
 ## La cité oubliée
