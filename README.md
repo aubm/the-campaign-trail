@@ -1,6 +1,6 @@
 # The Campaign Trail
 
-An illustrated journal of tabletop adventures, built with Astro and Markdown. The journal now contains **La Tombe de l’annihilation**, a real campaign chronicle beginning with the French prologue *Les ombres d’Omu*. **The Hollow Coast** remains a fictional sample. The English prologue is a clearly marked translation-pending page. The visual direction is a fantasy sourcebook: parchment, oxblood headings, gold accents, serif typography, and original painterly landscape art.
+An illustrated journal of tabletop adventures, built with Astro and Markdown. The journal now contains **La Tombe de l’annihilation**, a real campaign chronicle beginning with the French prologue *Les ombres d’Omu*. The homepage reserves space for upcoming adventures instead of listing fictional examples. The English prologue is a clearly marked translation-pending page. The visual direction is a fantasy sourcebook: parchment, oxblood headings, gold accents, serif typography, and original painterly landscape art.
 
 ## Development
 
@@ -40,7 +40,7 @@ illustration:
 Write the adventure introduction here in Markdown.
 ```
 
-Add image files to `public/images/`. All current sample pages deliberately reuse one concept illustration; replace each illustration independently as the real story arrives.
+Add image files to `public/images/`. The current chronicle temporarily reuses concept artwork; replace it with original scene-specific illustrations as the real story evolves.
 
 ## Add a chapter
 

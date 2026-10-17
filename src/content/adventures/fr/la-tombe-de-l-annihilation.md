@@ -17,4 +17,9 @@ Cette chronique en cours de publication raconte **notre aventure**, celle des pe
 
 Tout commence **trois ans avant la campagne**. L’archéologue Erdan Naïlo et ses compagnons atteignent Omu, une cité perdue que la jungle a lentement engloutie. Ce qu’ils y découvrent changera à jamais le cours de leur histoire.
 
-Nous publierons la suite **chapitre après chapitre**. Pour le moment, le prologue est disponible en français ; les illustrations définitives viendront dans un second temps.
+Je publierai la suite **chapitre après chapitre**. Pour le moment, le prologue est disponible en français ; les illustrations définitives viendront dans un second temps.
+
+<aside class="spoiler-warning" role="note" aria-label="Avertissement sur les spoilers">
+  <strong>Attention — spoilers sur le module officiel.</strong>
+  <p>Cette chronique dévoilera des éléments importants de l’intrigue, des lieux, des énigmes et des personnages de <em>La Tombe de l’annihilation</em>. Si vous jouez à cette campagne, ou comptez y jouer, mieux vaut attendre de l’avoir terminée avant de lire le récit.</p>
+</aside>
