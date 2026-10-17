@@ -171,7 +171,7 @@ test("every page has working reciprocal language switches, language metadata, an
   }
 });
 
-test("the Omu prologue replaces the sample and the English version signals translation status", async () => {
+test("the Omu prologue is complete in both languages without revealing the later ritual", async () => {
   const slug = "la-tombe-de-l-annihilation";
   const frChapter = await readFile(fileForUrl(`/fr/adventures/${slug}/prologue/`), "utf8");
   for (const term of ["Les ombres d’Omu", "La cité oubliée", "Sous les pierres", "Le dernier feu", "Talia", "Elle pourrait bien se révéler utile", "Sommaire de l’aventure"]) {
@@ -182,9 +182,15 @@ test("the Omu prologue replaces the sample and the English version signals trans
   assert.ok(!frChapter.includes("Dendar"), "The later ritual must stay undisclosed");
 
   const enChapter = await readFile(fileForUrl(`/adventures/${slug}/prologue/`), "utf8");
-  assert.ok(enChapter.includes("Les ombres d’Omu"));
-  assert.ok(enChapter.includes("currently available only in French"));
-  assert.ok(enChapter.includes("An English translation will be published later"));
+  for (const term of ["Shadows of Omu", "The Forgotten City", "Beneath the Stones", "The Last Fire", "Talia", "She may yet prove useful", "End of the prologue"]) {
+    assert.ok(enChapter.includes(term), `Missing English prologue text: ${term}`);
+  }
+  assert.ok(!enChapter.includes("currently available only in French"));
+  assert.ok(!enChapter.includes("An English translation will be published later"));
+  assert.ok(!enChapter.includes("Dendar"), "The later ritual must stay undisclosed in English");
+  const images = (html) => [...html.matchAll(/<img[^>]+src="(\/images\/prologue\/[^"]+)"/g)].map((match) => match[1]);
+  assert.equal(images(enChapter).length, 8);
+  assert.deepEqual(images(enChapter), images(frChapter));
   assert.ok(enChapter.includes(`href="/fr/adventures/${slug}/prologue/"`));
   assert.ok(!enChapter.includes("La cité oubliée"));
   assert.ok(!enChapter.includes("Sample chapter"));
@@ -194,10 +200,10 @@ test("the Omu prologue replaces the sample and the English version signals trans
     assert.ok(frAdventure.includes(term), `Missing campaign introduction: ${term}`);
   }
   const enAdventure = await readFile(fileForUrl(`/adventures/${slug}/`), "utf8");
-  assert.ok(enAdventure.includes("La Tombe de l’annihilation"));
-  assert.ok(enAdventure.includes("English translation coming later"));
-  assert.ok(enAdventure.includes("Read the French original"));
-  assert.ok(enAdventure.includes(`href="/fr/adventures/${slug}/prologue/"`));
+  assert.ok(enAdventure.includes("Tomb of Annihilation"));
+  assert.ok(enAdventure.includes("The prologue is available in English and French"));
+  assert.ok(!enAdventure.includes("English translation coming later"));
+  assert.ok(enAdventure.includes(`href="/adventures/${slug}/prologue/"`));
   for (const locale of ["", "/fr"]) {
     const home = await readFile(fileForUrl(`${locale}/`), "utf8");
     assert.ok(home.includes(`href="${locale}/adventures/${slug}/"`));
