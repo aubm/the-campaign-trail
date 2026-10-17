@@ -120,12 +120,14 @@ const fr = locale === "fr";
           </div>
         </article>
       ))}
+      {campaigns.length === 1 && (
+        <aside class="upcoming-adventure" aria-labelledby="upcoming-adventure-title">
+          <span class="upcoming-mark" aria-hidden="true">✧</span>
+          <p class="eyebrow">{t.upcomingEyebrow}</p>
+          <h3 id="upcoming-adventure-title">{t.upcomingTitle}</h3>
+          <p>{t.upcomingDescription}</p>
+        </aside>
+      )}
     </div>
-    <aside class="editor-note">
-      <span aria-hidden="true">✧</span>
-      <p>
-        <strong>{t.noteTitle}</strong> {t.note}
-      </p>
-    </aside>
   </section>
 </Book>

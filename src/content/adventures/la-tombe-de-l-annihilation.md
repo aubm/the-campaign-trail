@@ -18,3 +18,8 @@ This ongoing chronicle retells **our adventure** through the experiences of our 
 The story begins three years earlier, when the archaeologist Erdan Naïlo and his companions reach the lost city of Omu.
 
 **The prologue is available in French now.** An English translation will be published later; new chapters and original illustrations will be added progressively.
+
+<aside class="spoiler-warning" role="note" aria-label="Spoiler warning">
+  <strong>Spoiler warning — official adventure.</strong>
+  <p>This chronicle will reveal major plot points, locations, puzzles, and characters from the official <em>Tomb of Annihilation</em> adventure. If you are playing or plan to play this campaign, consider waiting until your game has finished before reading the story.</p>
+</aside>

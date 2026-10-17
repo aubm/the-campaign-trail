@@ -208,6 +208,49 @@ test("the Omu prologue replaces the sample and the English version signals trans
   }
 });
 
+test("the adventure introduction warns about spoilers and uses first-person publication", async () => {
+  const slug = "la-tombe-de-l-annihilation";
+  const fr = await readFile(fileForUrl(`/fr/adventures/${slug}/`), "utf8");
+  assert.ok(fr.includes("Je publierai la suite"));
+  assert.ok(!fr.includes("Nous publierons"));
+  assert.ok(fr.includes("Attention — spoilers sur le module officiel."));
+  assert.ok(fr.includes("Si vous jouez à cette campagne, ou comptez y jouer"));
+  assert.ok(fr.includes('class="spoiler-warning"'));
+
+  const en = await readFile(fileForUrl(`/adventures/${slug}/`), "utf8");
+  assert.ok(en.includes("Spoiler warning — official adventure."));
+  assert.ok(en.includes("If you are playing or plan to play"));
+});
+
+test("the chronicle catalogue displays one real adventure and a non-clickable coming-soon card", async () => {
+  for (const locale of ["", "/fr"]) {
+    const html = await readFile(fileForUrl(`${locale}/`), "utf8");
+    assert.equal((html.match(/class="adventure-card"/g) || []).length, 1);
+    assert.ok(html.includes('class="upcoming-adventure"'));
+    assert.ok(html.includes(locale ? "Bientôt, d’autres aventures" : "More adventures coming soon"));
+    assert.ok(!html.includes("La Côte des Murmures"));
+    assert.ok(!html.includes("The Hollow Coast"));
+    assert.ok(!html.includes("/adventures/the-hollow-coast/"));
+    assert.equal(
+      await stat(fileForUrl(`${locale}/adventures/the-hollow-coast/`)).catch(() => null),
+      null,
+      "A fictional adventure must not remain published",
+    );
+  }
+});
+
+test("adventure buttons preserve their foreground color outside hover", async () => {
+  const css = await readFile(resolve("src/styles/book.css"), "utf8");
+  assert.match(css, /\.prose a:not\(\.button\)\s*\{/);
+  assert.match(css, /\.prose a\.button\s*\{\s*color:\s*#fff4df;/);
+  assert.doesNotMatch(css, /\.prose a\s*\{\s*color:\s*var\(--red\);/);
+  const html = await readFile(
+    fileForUrl("/fr/adventures/la-tombe-de-l-annihilation/"),
+    "utf8",
+  );
+  assert.ok(html.includes('class="button"'));
+});
+
 test("published adventures connect home, catalogue, and product pages in both languages", async () => {
   for (const prefix of ["", "/fr"]) {
     const detailPath = `${prefix}/play/escape-the-dawn-warrior-island/`;
