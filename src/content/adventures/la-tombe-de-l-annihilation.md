@@ -1,10 +1,9 @@
 ---
-title: "La Tombe de l’annihilation"
+title: "Tomb of Annihilation"
 subtitle: "A campaign remembered, one chapter at a time."
-description: "Our campaign chronicle inspired by Tomb of Annihilation, played from 2021 to 2023. The story is currently available in French."
+description: "Our campaign chronicle inspired by Tomb of Annihilation, played from 2021 to 2023. The prologue is available in English and French."
 order: 1
 setting: "Chult · Forgotten Realms"
-translationPending: true
 illustration:
   src: /images/omu-ras-nsi.webp
   alt: "Ras Nsi brandishes a flaming blade in the jungle-covered ruins of Omu, his serpentine body coiled among ancient stones and yuan-ti followers."
@@ -17,7 +16,7 @@ This ongoing chronicle retells **our adventure** through the experiences of our 
 
 The story begins three years earlier, when the archaeologist Erdan Naïlo and his companions reach the lost city of Omu.
 
-**The prologue is available in French now.** An English translation will be published later; new chapters and original illustrations will be added progressively.
+**The prologue is available in English and French.** New chapters and original illustrations will be added progressively.
 
 <aside class="spoiler-warning" role="note" aria-label="Spoiler warning">
   <strong>Spoiler warning — official adventure.</strong>
