@@ -48,6 +48,9 @@ const { Content } = await render(adventure);
     </p>
     <h1>{adventure.data.title}</h1>
     <p class="subtitle">{adventure.data.subtitle}</p>
+    {adventure.data.translationPending && (
+      <p class="language-availability">{t.frenchOnlyShort}</p>
+    )}
     <figure class="panorama">
       <img
         src={adventure.data.illustration.src}
@@ -66,9 +69,16 @@ const { Content } = await render(adventure);
       <p class="eyebrow">{t.adventure}</p>
       <Content />
       {chapters[0] && (
-        <a class="button" href={chapterUrl(chapters[0])}>
-          {t.begin} <span aria-hidden="true">→</span>
-        </a>
+        adventure.data.translationPending ? (
+          <a class="button" href={localizePath(chapterUrl(chapters[0]), "fr")} hreflang="fr">
+            {t.readFrenchOriginal} <span aria-hidden="true">→</span>
+          </a>
+        ) : (
+          <a class="button" href={chapterUrl(chapters[0])}>
+            {chapters[0].data.order === 0 ? t.readPrologue : t.begin}{" "}
+            <span aria-hidden="true">→</span>
+          </a>
+        )
       )}
     </div>
     <div class="contents">

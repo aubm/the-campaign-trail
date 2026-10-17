@@ -992,3 +992,85 @@ h2[id] {
     gap: 0 20px;
   }
 }
+
+
+/* Real chronicle typography: reserve the imagery for a future editorial pass. */
+.language-availability,
+.availability-note {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.025em;
+  color: var(--red);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 5px;
+}
+.language-availability { margin-top: 18px; }
+.availability-note { margin-top: 12px; }
+.chapter-prose.story-prose {
+  max-width: 68ch;
+  font-size: 1.06rem;
+  line-height: 2;
+}
+.story-prose h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  text-align: center;
+  padding-top: 58px;
+  margin: 74px 0 10px;
+  border-top: 1px solid var(--line);
+  text-wrap: balance;
+}
+.story-prose h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+.story-prose h2 + p {
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 36px;
+}
+.story-prose h2:first-child + p + p::first-letter {
+  float: left;
+  font: 500 4.6rem/0.82 var(--display);
+  color: var(--red);
+  padding: 0.1em 0.12em 0 0;
+}
+.story-prose p {
+  text-wrap: pretty;
+  widows: 2;
+  orphans: 2;
+}
+.story-prose p + p { margin-top: 0.9em; }
+.story-prose hr {
+  width: 68px;
+  border: none;
+  border-top: 1px solid var(--gold);
+  margin: 55px auto 20px;
+}
+.story-prose > p:last-child {
+  font-size: 0.83rem;
+  text-align: center;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+.translation-notice {
+  padding: 35px;
+  border-block: 1px solid var(--line);
+  background: #eae0cd66;
+  text-align: center;
+}
+.translation-notice p:not(.eyebrow) {
+  margin: 15px auto 0;
+  max-width: 45ch;
+  line-height: 1.9;
+}
+.translation-notice .button { margin-top: 24px; }
+@media (max-width: 600px) {
+  .chapter-prose.story-prose { font-size: 1rem; line-height: 1.9; }
+  .story-prose h2 { margin-top: 48px; padding-top: 38px; }
+  .story-prose h2 + p { margin-bottom: 26px; }
+  .story-prose h2:first-child + p + p::first-letter { font-size: 3.6rem; }
+  .translation-notice { padding: 25px 18px; }
+}

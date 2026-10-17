@@ -1,6 +1,6 @@
 # The Campaign Trail
 
-An illustrated journal of tabletop adventures, built with Astro and Markdown. The first version includes two **fictional sample adventures** and five placeholder chapters. The visual direction is a fantasy sourcebook: parchment, oxblood headings, gold accents, serif typography, and original painterly landscape art.
+An illustrated journal of tabletop adventures, built with Astro and Markdown. The journal now contains **La Tombe de l’annihilation**, a real campaign chronicle beginning with the French prologue *Les ombres d’Omu*. **The Hollow Coast** remains a fictional sample. The English prologue is a clearly marked translation-pending page. The visual direction is a fantasy sourcebook: parchment, oxblood headings, gold accents, serif typography, and original painterly landscape art.
 
 ## Development
 
@@ -64,7 +64,7 @@ The story begins here.
 More story, images, and blockquotes can follow.
 ```
 
-Chapters are sorted by `order` **within each adventure**, independent of filenames. Use unique positive integer orders; gaps are allowed. The adventure reference must exist. The build rejects duplicate orders and chapter URLs. Pages, contents lists, breadcrumbs, and previous/next links are generated automatically. The last chapter links back to the adventure library, never into a different adventure. Each `##` heading becomes an on-page navigation link. The final filename is the chapter URL slug; keep it stable once published.
+Chapters are sorted by `order` **within each adventure**, independent of filenames. Set `order: 0` for a prologue (displayed as **Prologue · Chapitre 0**). Set `sample: false` on real chapters so they do not show the placeholder notice. Use unique positive integer orders; gaps are allowed. The adventure reference must exist. The build rejects duplicate orders and chapter URLs. Pages, contents lists, breadcrumbs, and previous/next links are generated automatically. The last chapter links back to the adventure library, never into a different adventure. Each `##` heading becomes an on-page navigation link. The final filename is the chapter URL slug; keep it stable once published.
 
 ## GitHub Pages
 
@@ -93,7 +93,7 @@ Interface text is in `src/lib/i18n.ts`. Content translations are separate Markdo
 | Adventure | `src/content/adventures/my-adventure.md`               | `src/content/adventures/fr/my-adventure.md`               |
 | Chapter   | `src/content/chapters/my-adventure/a-new-beginning.md` | `src/content/chapters/fr/my-adventure/a-new-beginning.md` |
 
-For each new adventure or chapter, add **both versions** in the same PR. English defaults to `locale: en`. French must set `locale: fr`; a French chapter's adventure reference must include the prefix, e.g. `adventure: fr/my-adventure`. Translate titles, summaries, prose, captions, and image alt text. Images can be shared or differ between languages. Keep filenames and `order` values aligned so readers switch to the same point in the story.
+For each new adventure or chapter, add **both versions** in the same PR. When a translation is not ready, keep the matching page for valid navigation but set `translationPending: true` in its metadata and display a language notice rather than duplicating untranslated story text (as with the English prologue of *La Tombe de l’annihilation*). English defaults to `locale: en`. French must set `locale: fr`; a French chapter's adventure reference must include the prefix, e.g. `adventure: fr/my-adventure`. Translate titles, summaries, prose, captions, and image alt text when both versions are available; a French-only story may retain its French title in the English metadata while the description and availability notice are written in English. Images can be shared or differ between languages. Keep filenames and `order` values aligned so readers switch to the same point in the story.
 
 The build rejects missing translation pairs, mismatched orders, and chapters referencing an adventure in a different language. Tests check reciprocal language links, canonical URLs, locale metadata, and chapter navigation in both languages. Each translated page has its own canonical URL and `hreflang` links.
 
