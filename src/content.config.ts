@@ -15,6 +15,7 @@ const adventures = defineCollection({
     description: z.string(),
     order: z.number().int().positive(),
     setting: z.string(),
+    translationPending: z.boolean().default(false),
     illustration,
   }),
 });
@@ -25,7 +26,9 @@ const chapters = defineCollection({
     adventure: reference("adventures"),
     title: z.string(),
     summary: z.string(),
-    order: z.number().int().positive(),
+    order: z.number().int().nonnegative(),
+    sample: z.boolean().default(true),
+    translationPending: z.boolean().default(false),
     illustration,
   }),
 });

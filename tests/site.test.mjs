@@ -171,26 +171,41 @@ test("every page has working reciprocal language switches, language metadata, an
   }
 });
 
-test("French chapters contain translated prose, image descriptions, and navigation labels", async () => {
-  const html = await readFile(
-    join(root, "fr/adventures/embers-of-the-north/the-old-road/index.html"),
-    "utf8",
-  );
-  for (const text of [
-    "La Vieille Route",
-    "Un inconnu à la croisée des chemins",
-    "Chapitre suivant",
-    "Sommaire de l’aventure",
-    "Des voyageurs en cape",
-  ])
-    assert.ok(html.includes(text), `Missing French content: ${text}`);
-  for (const text of [
-    "A stranger at the crossroads",
-    "Next chapter",
-    "Sample chapter",
-    "Travelers follow",
-  ])
-    assert.ok(!html.includes(text), `Untranslated English content: ${text}`);
+test("the Omu prologue replaces the sample and the English version signals translation status", async () => {
+  const slug = "la-tombe-de-l-annihilation";
+  const frChapter = await readFile(fileForUrl(`/fr/adventures/${slug}/prologue/`), "utf8");
+  for (const term of ["Les ombres d’Omu", "La cité oubliée", "Sous les pierres", "Le dernier feu", "Talia", "Elle pourrait bien se révéler utile", "Sommaire de l’aventure"]) {
+    assert.ok(frChapter.includes(term), `Missing prologue text: ${term}`);
+  }
+  assert.ok(frChapter.includes('src="/images/the-long-road.webp"'));
+  assert.ok(!frChapter.includes("Chapitre d’exemple"));
+  assert.ok(!frChapter.includes("Dendar"), "The later ritual must stay undisclosed");
+
+  const enChapter = await readFile(fileForUrl(`/adventures/${slug}/prologue/`), "utf8");
+  assert.ok(enChapter.includes("Les ombres d’Omu"));
+  assert.ok(enChapter.includes("currently available only in French"));
+  assert.ok(enChapter.includes("An English translation will be published later"));
+  assert.ok(enChapter.includes(`href="/fr/adventures/${slug}/prologue/"`));
+  assert.ok(!enChapter.includes("La cité oubliée"));
+  assert.ok(!enChapter.includes("Sample chapter"));
+
+  const frAdventure = await readFile(fileForUrl(`/fr/adventures/${slug}/`), "utf8");
+  for (const term of ["La Tombe de l’annihilation", "3 juillet 2021", "16 septembre 2023", "chapitre après chapitre"]) {
+    assert.ok(frAdventure.includes(term), `Missing campaign introduction: ${term}`);
+  }
+  const enAdventure = await readFile(fileForUrl(`/adventures/${slug}/`), "utf8");
+  assert.ok(enAdventure.includes("La Tombe de l’annihilation"));
+  assert.ok(enAdventure.includes("English translation coming later"));
+  assert.ok(enAdventure.includes("Read the French original"));
+  assert.ok(enAdventure.includes(`href="/fr/adventures/${slug}/prologue/"`));
+  for (const locale of ["", "/fr"]) {
+    const home = await readFile(fileForUrl(`${locale}/`), "utf8");
+    assert.ok(home.includes(`href="${locale}/adventures/${slug}/"`));
+    assert.ok(home.includes(`href="${locale}/adventures/${slug}/prologue/"`));
+    assert.ok(!home.includes("Les Braises du Nord"));
+    assert.ok(!home.includes("Embers of the North"));
+    assert.equal(await stat(fileForUrl(`${locale}/adventures/embers-of-the-north/`)).catch(() => null), null);
+  }
 });
 
 test("published adventures connect home, catalogue, and product pages in both languages", async () => {

@@ -55,15 +55,15 @@ const { Content, headings } = await render(chapter);
       <a href={adventureUrl(adventure.id, locale)}>{adventure.data.title}</a>
       <span aria-hidden="true">/</span>
       <span>
-        {t.chapter} {chapter.data.order}
+        {chapter.data.order === 0 ? t.prologue : `${t.chapter} ${chapter.data.order}`}
       </span>
     </nav>
   </div>
   <article>
     <header class="chapter-header section-wrap">
       <p class="eyebrow">
-        {adventure.data.title} <span aria-hidden="true">✧</span> {t.chapter}{" "}
-        {String(chapter.data.order).padStart(2, "0")}
+        {adventure.data.title} <span aria-hidden="true">✧</span>{" "}
+        {chapter.data.order === 0 ? `${t.prologue} · ${t.chapter} 0` : `${t.chapter} ${String(chapter.data.order).padStart(2, "0")}`}
       </p>
       <h1>{chapter.data.title}</h1>
       <p class="subtitle">{chapter.data.summary}</p>
@@ -113,10 +113,25 @@ const { Content, headings } = await render(chapter);
         </a>
       </aside>
       <div>
-        <div class="prose chapter-prose">
-          <p class="sample-label">{t.sample}</p>
-          <Content />
-        </div>
+        {chapter.data.translationPending && (
+          <aside class="translation-notice" aria-label={t.frenchEdition}>
+            <p class="eyebrow">{t.frenchEdition}</p>
+            <p>{t.translationNotice}</p>
+            <a
+              class="button"
+              href={localizePath(Astro.url.pathname, "fr")}
+              hreflang="fr"
+            >
+              {t.readFrenchOriginal} <span aria-hidden="true">→</span>
+            </a>
+          </aside>
+        )}
+        {!chapter.data.translationPending && (
+          <div class:list={["prose", "chapter-prose", { "story-prose": !chapter.data.sample }]}>
+            {chapter.data.sample && <p class="sample-label">{t.sample}</p>}
+            <Content />
+          </div>
+        )}
         <nav class="chapter-pagination" aria-label={t.chapterNavigation}>
           {previous ? (
             <a rel="prev" href={chapterUrl(previous)}>

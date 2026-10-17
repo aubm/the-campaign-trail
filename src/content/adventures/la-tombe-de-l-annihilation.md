@@ -1,0 +1,20 @@
+---
+title: "La Tombe de l’annihilation"
+subtitle: "A campaign remembered, one chapter at a time."
+description: "Our campaign chronicle inspired by Tomb of Annihilation, played from 2021 to 2023. The story is currently available in French."
+order: 1
+setting: "Chult · Forgotten Realms"
+translationPending: true
+illustration:
+  src: /images/the-long-road.webp
+  alt: "A winding mountain road toward a distant citadel; temporary artwork, not a depiction of Omu."
+  caption: "Temporary illustration. New artwork for this chronicle will follow."
+---
+
+From **July 3, 2021, to September 16, 2023**, we played a Dungeons & Dragons campaign adapted from *Tomb of Annihilation*, an official adventure set in the jungles of Chult in the Forgotten Realms.
+
+This ongoing chronicle retells **our adventure** through the experiences of our characters. It draws on campaign notes and the players’ memories, with scenes sometimes reconstructed or imagined for the story. It is neither a session transcript nor a reproduction of the published module.
+
+The story begins three years earlier, when the archaeologist Erdan Naïlo and his companions reach the lost city of Omu.
+
+**The prologue is available in French now.** An English translation will be published later; new chapters and original illustrations will be added progressively.

@@ -105,13 +105,16 @@ const fr = locale === "fr";
                 {adventure.data.title}
               </a>
             </h3>
+            {adventure.data.translationPending && (
+              <span class="availability-note">{t.frenchOnlyShort}</span>
+            )}
             <p>{adventure.data.description}</p>
             <a class="text-link" href={adventureUrl(adventure.id, locale)}>
               {t.explore} <span aria-hidden="true">→</span>
             </a>
             {chapters[0] && (
               <a class="start-link" href={chapterUrl(chapters[0])}>
-                {t.start}
+                {chapters[0].data.order === 0 ? t.readPrologue : t.start}
               </a>
             )}
           </div>
