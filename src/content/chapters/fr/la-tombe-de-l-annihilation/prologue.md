@@ -6,9 +6,10 @@ summary: "Prologue · À l’aube, l’expédition d’Erdan découvre Omu. Avan
 order: 0
 sample: false
 illustration:
-  src: /images/omu-ras-nsi.webp
-  alt: "Ras Nsi armé d’une lame enflammée, au cœur des temples en ruines et de la jungle d’Omu."
-  caption: "Ras Nsi au cœur des ruines d’Omu."
+  src: /images/prologue/01-1672.webp
+  srcset: "/images/prologue/01-640.webp 640w, /images/prologue/01-1672.webp 1672w"
+  alt: "Les six voyageurs découvrent les ruines d’Omu depuis une falaise, dans la lumière de l’aube."
+  caption: "Depuis la falaise, l’expédition découvre Omu dans les brumes du matin."
 ---
 
 ## La cité oubliée
@@ -163,6 +164,11 @@ Le jeune homme étudia les deux dessins, comme il le faisait depuis des mois sou
 
 Ghaar sourit. Pour une fois, il avait devancé la leçon.
 
+<figure class="story-illustration">
+  <img src="/images/prologue/02-1536.webp" srcset="/images/prologue/02-640.webp 640w, /images/prologue/02-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="Erdan et Ghaar comparent les dessins du carnet à une frise sculptée." />
+  <figcaption>Erdan et Ghaar confrontent leurs notes aux motifs de la frise.</figcaption>
+</figure>
+
 Ils pénétrèrent dans le bâtiment.
 
 À l'intérieur, la lumière passait difficilement entre les pierres disjointes du plafond. Une cour intérieure abritait un arbre immense dont les racines avaient soulevé une partie du dallage.
@@ -225,6 +231,11 @@ Talia posa une main sur son bras. Erdan recouvrit un instant ses doigts des sien
 
 — Et Maeren a l'air inquiet.
 
+<figure class="story-illustration">
+  <img src="/images/prologue/03-1536.webp" srcset="/images/prologue/03-640.webp 640w, /images/prologue/03-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="Maeren sonde l’escalier obscur tandis qu’Erdan dessine les gravures et que Talia pose une main sur son bras." />
+  <figcaption>Sous la dalle, un escalier s’enfonce dans l’obscurité.</figcaption>
+</figure>
+
 Le mage observait toujours l'ouverture.
 
 — Ce lieu devrait être mort depuis longtemps. Je ne comprends pas comment une magie aussi puissante peut encore y subsister.
@@ -266,6 +277,11 @@ Elle la porta près de ses lèvres.
 La pierre s'illumina faiblement dans sa main.
 
 Puis la lumière s'éteignit.
+
+<figure class="story-illustration story-illustration--portrait">
+  <img src="/images/prologue/04-1024.webp" srcset="/images/prologue/04-640.webp 640w, /images/prologue/04-1024.webp 1024w" sizes="(max-width: 468px) calc(100vw - 48px), 420px" width="1024" height="1536" loading="lazy" decoding="async" alt="Dissimulée derrière un mur, Salida murmure dans une pierre messagère sculptée d’un visage." />
+  <figcaption>À l’abri d’un mur, Salida transmet son message.</figcaption>
+</figure>
 
 ## Le dernier feu
 
@@ -337,6 +353,11 @@ Il connaissait leurs défauts, leurs habitudes, leurs disputes sans importance. 
 
 Demain, tout cela aurait peut-être enfin un sens.
 
+<figure class="story-illustration">
+  <img src="/images/prologue/05-1672.webp" srcset="/images/prologue/05-640.webp 640w, /images/prologue/05-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Darek prépare le repas, Ghaar sourit et Maeren contemple le feu ; Erdan et Talia partagent une carte." />
+  <figcaption>Autour du dernier feu, les compagnons partagent un moment de répit.</figcaption>
+</figure>
+
 Il remarqua alors que Salida se tenait à l'écart, près de l'ouverture de la cour.
 
 — Tu ne manges pas avec nous ?
@@ -400,6 +421,11 @@ Ghaar entraîna Talia vers une arcade effondrée.
 Erdan tenta de soulever Darek, mais le garde ne répondait plus. Du sang coulait entre ses doigts.
 
 — Darek ! Regarde-moi !
+
+<figure class="story-illustration">
+  <img src="/images/prologue/06-1672.webp" srcset="/images/prologue/06-640.webp 640w, /images/prologue/06-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Maeren repousse deux assaillants ; Erdan soutient Darek et Ghaar entraîne Talia vers la sortie." />
+  <figcaption>Maeren protège la fuite pendant qu’Erdan tente de secourir Darek.</figcaption>
+</figure>
 
 Un sifflement retentit dans son dos.
 
@@ -495,6 +521,11 @@ Le guerrier au corps de serpent suivit ce geste du regard.
 
 — Je suis Ras Nsi, déclara-t-il enfin. Et ce que vous avez découvert ne vous appartient pas.
 
+<figure class="story-illustration">
+  <img src="/images/prologue/07-1672.webp" srcset="/images/prologue/07-640.webp 640w, /images/prologue/07-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Ras Nsi barre la sortie avec son corps serpentin, Salida à ses côtés ; Talia retient Erdan." />
+  <figcaption>Aux côtés de Ras Nsi, Salida révèle son allégeance.</figcaption>
+</figure>
+
 Il se tourna vers ses hommes.
 
 — Les autres ne nous sont d'aucune utilité.
@@ -526,6 +557,11 @@ Le yuan-ti leva son épée pour l'abattre. Erdan poussa un cri et tenta désesp�
 Ras Nsi leva alors la main.
 
 — Attendez... Elle pourrait bien se révéler utile.
+
+<figure class="story-illustration">
+  <img src="/images/prologue/08-1536.webp" srcset="/images/prologue/08-640.webp 640w, /images/prologue/08-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="Ras Nsi lève la main pour arrêter le bourreau de Talia, tandis qu’Erdan se débat entre trois gardes." />
+  <figcaption>Un geste de Ras Nsi suspend la lame.</figcaption>
+</figure>
 
 ---
 
