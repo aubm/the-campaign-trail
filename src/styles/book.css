@@ -484,8 +484,7 @@ h3 {
   font-size: clamp(3rem, 5.6vw, 5.2rem);
 }
 .chapter-illustration img {
-  height: 420px;
-  object-position: center 55%;
+  height: auto;
 }
 .reading-layout {
   display: grid;
@@ -708,7 +707,7 @@ h2[id] {
     margin-inline: 5px;
   }
   .chapter-illustration img {
-    height: 280px;
+    height: auto;
   }
   .reading-layout {
     display: flex;
@@ -1081,6 +1080,24 @@ h2[id] {
   orphans: 2;
 }
 .story-prose p + p { margin-top: 0.9em; }
+.story-prose .story-illustration {
+  margin: 2.5rem 0;
+}
+.story-prose .story-illustration img {
+  height: auto;
+}
+.story-prose .story-illustration figcaption {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+.story-prose .story-illustration--portrait {
+  max-width: 420px;
+  margin-inline: auto;
+}
 .story-prose hr {
   width: 68px;
   border: none;

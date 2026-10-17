@@ -177,7 +177,7 @@ test("the Omu prologue replaces the sample and the English version signals trans
   for (const term of ["Les ombres d’Omu", "La cité oubliée", "Sous les pierres", "Le dernier feu", "Talia", "Elle pourrait bien se révéler utile", "Sommaire de l’aventure"]) {
     assert.ok(frChapter.includes(term), `Missing prologue text: ${term}`);
   }
-  assert.ok(frChapter.includes('src="/images/omu-ras-nsi.webp"'));
+  assert.ok(frChapter.includes('src="/images/prologue/01-1672.webp"'));
   assert.ok(!frChapter.includes("Chapitre d’exemple"));
   assert.ok(!frChapter.includes("Dendar"), "The later ritual must stay undisclosed");
 
@@ -208,7 +208,7 @@ test("the Omu prologue replaces the sample and the English version signals trans
   }
 });
 
-test("Ras Nsi illustration replaces the placeholder on both adventure and prologue pages", async () => {
+test("Ras Nsi illustration remains on adventure pages", async () => {
   const imagePath = join(root, "images", "omu-ras-nsi.webp");
   const webp = await readFile(imagePath);
   assert.equal(webp.toString("ascii", 0, 4), "RIFF", "WebP RIFF header");
@@ -217,7 +217,6 @@ test("Ras Nsi illustration replaces the placeholder on both adventure and prolog
   for (const prefix of ["", "/fr"]) {
     for (const page of [
       `${prefix}/adventures/la-tombe-de-l-annihilation/`,
-      `${prefix}/adventures/la-tombe-de-l-annihilation/prologue/`,
     ]) {
       const html = await readFile(fileForUrl(page), "utf8");
       assert.ok(html.includes('src="/images/omu-ras-nsi.webp"'), `${page} must use the new artwork`);

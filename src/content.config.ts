@@ -3,6 +3,7 @@ import { defineCollection, reference } from "astro:content";
 import { glob } from "astro/loaders";
 const illustration = z.object({
   src: z.string().startsWith("/images/"),
+  srcset: z.string().optional(),
   alt: z.string().min(1),
   caption: z.string().optional(),
 });
