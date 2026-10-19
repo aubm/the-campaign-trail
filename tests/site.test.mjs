@@ -214,6 +214,31 @@ test("the Omu prologue is complete in both languages without revealing the later
   }
 });
 
+test("chapter one publishes the French story and an English translation notice", async () => {
+  const route = "/adventures/la-tombe-de-l-annihilation/le-chant-de-l-elfe/";
+  const french = await readFile(fileForUrl(`/fr${route}`), "utf8");
+  const english = await readFile(fileForUrl(route), "utf8");
+
+  assert.ok(french.includes("Le cheval s’arrêta avant qu’elle le lui demande."));
+  assert.ok(french.includes("longue tresse brune"));
+  assert.ok(french.includes("À Port Nyanzaru, donc."));
+  assert.equal((french.match(/<h2\b/g) || []).length, 6);
+  for (const text of ["Script V3", "Note de continuité", "Narration et dialogues", "Intention visuelle"]) {
+    assert.ok(!french.includes(text), `Production notes must not be published: ${text}`);
+  }
+  assert.ok(!french.includes('class="translation-notice"'));
+  assert.ok(english.includes('class="translation-notice"'));
+  assert.ok(english.includes("This chapter is currently available only in French."));
+  assert.ok(english.includes("An English translation is coming soon."));
+  assert.ok(english.includes(`href="/fr${route}" hreflang="fr"`));
+  assert.ok(!english.includes("Le cheval s’arrêta avant qu’elle le lui demande."));
+  for (const html of [french, english]) {
+    assert.ok(html.includes('src="/images/omu-ras-nsi.webp"'));
+    assert.ok(!html.includes("Sample chapter"));
+    assert.ok(!html.includes("Chapitre d’exemple"));
+  }
+});
+
 test("Ras Nsi illustration remains on adventure pages", async () => {
   const imagePath = join(root, "images", "omu-ras-nsi.webp");
   const webp = await readFile(imagePath);

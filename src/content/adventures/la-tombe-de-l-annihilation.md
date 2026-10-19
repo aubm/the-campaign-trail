@@ -16,7 +16,7 @@ This ongoing chronicle retells **our adventure** through the experiences of our 
 
 The story begins three years earlier, when the archaeologist Erdan Naïlo and his companions reach the lost city of Omu.
 
-**The prologue is available in English and French.** New chapters and original illustrations will be added progressively.
+**The prologue is available in English and French.** Chapter 1, **Le Chant de l’Elfe**, is currently available only in French. An English translation is coming soon. New chapters and original illustrations will be added progressively.
 
 <aside class="spoiler-warning" role="note" aria-label="Spoiler warning">
   <strong>Spoiler warning — official adventure.</strong>
