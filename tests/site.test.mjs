@@ -214,7 +214,7 @@ test("the Omu prologue is complete in both languages without revealing the later
   }
 });
 
-test("chapter one publishes the French story and an English translation notice", async () => {
+test("chapter one publishes complete illustrated stories in both languages", async () => {
   const route = "/adventures/la-tombe-de-l-annihilation/le-chant-de-l-elfe/";
   const french = await readFile(fileForUrl(`/fr${route}`), "utf8");
   const english = await readFile(fileForUrl(route), "utf8");
@@ -227,9 +227,16 @@ test("chapter one publishes the French story and an English translation notice",
     assert.ok(!french.includes(text), `Production notes must not be published: ${text}`);
   }
   assert.ok(!french.includes('class="translation-notice"'));
-  assert.ok(english.includes('class="translation-notice"'));
-  assert.ok(english.includes("This chapter is currently available only in French."));
-  assert.ok(english.includes("An English translation is coming soon."));
+  assert.ok(!english.includes('class="translation-notice"'));
+  assert.ok(!english.includes("currently available only in French"));
+  assert.ok(!english.includes("An English translation is coming soon."));
+  for (const text of ["The Elfsong", "The Gates at Dusk", "The Alley", "Trembling Hands", "The Night Between", "Before the Wisdom of the Seas", "Port Nyanzaru, then."]) {
+    assert.ok(english.includes(text), `Missing translated chapter text: ${text}`);
+  }
+  assert.equal((english.match(/<h2\b/g) || []).length, 6);
+  const chapterImages = (html) => [...html.matchAll(/<img[^>]+src="(\/images\/chapter-1\/[^"]+)"/g)].map((match) => match[1]);
+  assert.equal(chapterImages(english).length, 7);
+  assert.deepEqual(chapterImages(english), chapterImages(french));
   assert.ok(english.includes(`href="/fr${route}" hreflang="fr"`));
   assert.ok(!english.includes("Le cheval s’arrêta avant qu’elle le lui demande."));
   for (const html of [french, english]) {
