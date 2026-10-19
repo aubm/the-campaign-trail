@@ -6,9 +6,10 @@ summary: "À la Porte de Baldur, Jana cherche une piste pour sauver Celeborn. Un
 order: 1
 sample: false
 illustration:
-  src: /images/omu-ras-nsi.webp
-  alt: "Ras Nsi brandit une lame enflammée dans les ruines d’Omu, entouré de yuan-tis."
-  caption: "Illustration de présentation de la campagne, en attendant les illustrations de ce chapitre."
+  src: /images/chapter-1/01-1672.webp
+  srcset: "/images/chapter-1/01-640.webp 640w, /images/chapter-1/01-1672.webp 1672w"
+  alt: "Jana arrive à pied devant les remparts de la Porte de Baldur, auprès de son cheval chargé."
+  caption: "Jana devant les remparts."
 ---
 
 ## Les portes du soir
@@ -151,6 +152,11 @@ La lumière tomba.
 
 Elle frappa l’homme armé sur le haut du bras. Il cria, plia les jambes, puis se rattrapa au mur. Le couteau resta dans sa main.
 
+<figure class="story-illustration">
+  <img src="/images/chapter-1/02-1536.webp" srcset="/images/chapter-1/02-640.webp 640w, /images/chapter-1/02-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="Un agresseur retient Jana par ses vêtements tandis que sa lumière sacrée frappe le bras de l’homme au couteau ; le porteur s’éloigne derrière eux." />
+  <figcaption>La lumière dans la ruelle.</figcaption>
+</figure>
+
 Jana n’attendit pas.
 
 Elle saisit le porteur sous l’aisselle et le tira vers la rue. Il était plus lourd qu’elle ne l’avait cru ; ses talons raclaient les pierres.
@@ -220,6 +226,11 @@ Elle posa la paume au-dessus de la coupure.
 Sa première inspiration trembla. Elle recommença, plus lentement.
 
 Une chaleur douce passa entre ses doigts. Le saignement diminua, puis cessa ; la plaie se referma en laissant une trace rose.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-1/03-1536.webp" srcset="/images/chapter-1/03-640.webp 640w, /images/chapter-1/03-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="Accroupie dans la boutique, Jana soigne l’avant-bras du porteur sous le regard de la boutiquière." />
+  <figcaption>Les mains qui tremblent.</figcaption>
+</figure>
 
 Le porteur remua la main.
 
@@ -323,6 +334,11 @@ Elle eut un sourire.
 
 Le couteau de Bran s’arrêta au-dessus du pain.
 
+<figure class="story-illustration">
+  <img src="/images/chapter-1/04-1536.webp" srcset="/images/chapter-1/04-640.webp 640w, /images/chapter-1/04-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="À table, Jana observe Bran, dont le couteau s’immobilise au nom d’Artus Cimber." />
+  <figcaption>Un nom que Bran connaît.</figcaption>
+</figure>
+
 — Cimber ? Je l’ai rencontré à Port Nyanzaru.
 
 Jana redressa la tête.
@@ -417,6 +433,11 @@ Elle attendit une explication de plus. Elle ne vint pas.
 
 La plainte continua un moment. Jana gardait les mains sur la table. Tout ce qu’on lui avait appris lui commandait de se méfier ; elle ne parvenait pourtant à entendre qu’une peine.
 
+<figure class="story-illustration">
+  <img src="/images/chapter-1/05-1672.webp" srcset="/images/chapter-1/05-640.webp 640w, /images/chapter-1/05-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Jana, Bran et les clients de la taverne écoutent une voix dont la chanteuse demeure invisible." />
+  <figcaption>Le chant de l’elfe.</figcaption>
+</figure>
+
 Quand la voix se tut, les lumières reprirent leur éclat. Une chaise racla le sol.
 
 Jana regarda Bran.
@@ -451,6 +472,11 @@ Jana s’agenouilla près du lit.
 
 Elle resta ainsi sans trouver d’autres mots.
 
+<figure class="story-illustration story-illustration--portrait">
+  <img src="/images/chapter-1/06-1024.webp" srcset="/images/chapter-1/06-640.webp 640w, /images/chapter-1/06-1024.webp 1024w" sizes="(max-width: 468px) calc(100vw - 48px), 420px" width="1024" height="1536" loading="lazy" decoding="async" alt="Jana prie à genoux près du lit, les mains jointes et ses chaussures retirées." />
+  <figcaption>Une prière pour Celeborn.</figcaption>
+</figure>
+
 Lorsqu’elle se coucha, elle crut qu’elle ne dormirait pas.
 
 Le bruit d’un pas dans le couloir lui fit ouvrir les yeux. Une clarté grise dessinait déjà le bord des volets.
@@ -484,6 +510,11 @@ Il attendit qu’une caisse soit posée avant de venir vers elle.
 — Voilà déjà une décision raisonnable. Je tâcherai de ne pas vous en demander trop d’autres avant midi.
 
 Elle contempla la coque, les cordages, les hommes à leur travail. Le bateau existait. Il allait réellement partir.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-1/07-1672.webp" srcset="/images/chapter-1/07-640.webp 640w, /images/chapter-1/07-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Jana et Bran parlent sur le quai devant la Sagesse des Mers, encore amarrée, voiles ferlées, pendant le chargement." />
+  <figcaption>La Sagesse des Mers attend au quai.</figcaption>
+</figure>
 
 — Et si Artus n’est plus à Port Nyanzaru ?
 

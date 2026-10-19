@@ -233,7 +233,7 @@ test("chapter one publishes the French story and an English translation notice",
   assert.ok(english.includes(`href="/fr${route}" hreflang="fr"`));
   assert.ok(!english.includes("Le cheval s’arrêta avant qu’elle le lui demande."));
   for (const html of [french, english]) {
-    assert.ok(html.includes('src="/images/omu-ras-nsi.webp"'));
+    assert.ok(html.includes('src="/images/chapter-1/01-1672.webp"'));
     assert.ok(!html.includes("Sample chapter"));
     assert.ok(!html.includes("Chapitre d’exemple"));
   }

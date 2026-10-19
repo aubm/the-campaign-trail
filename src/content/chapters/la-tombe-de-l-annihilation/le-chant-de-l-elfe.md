@@ -6,8 +6,9 @@ order: 1
 sample: false
 translationPending: true
 illustration:
-  src: /images/omu-ras-nsi.webp
-  alt: "Ras Nsi brandishes a flaming blade among the ruins of Omu, surrounded by yuan-ti."
-  caption: "Campaign presentation artwork, used here until this chapter has its own illustrations."
+  src: /images/chapter-1/01-1672.webp
+  srcset: "/images/chapter-1/01-640.webp 640w, /images/chapter-1/01-1672.webp 1672w"
+  alt: "Jana arrives on foot at the gates of Baldur’s Gate beside her laden horse."
+  caption: "Jana before the city walls."
 ---
 
