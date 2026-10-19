@@ -20,7 +20,7 @@ Le cheval s’arrêta avant qu’elle le lui demande.
 
 Jana resta un instant penchée sur son encolure. Trois jours qu’elle pressait l’allure ; maintenant, il fallait tirer sur les rênes pour obtenir quelques pas. Elle mit pied à terre. Ses genoux lui rappelèrent aussitôt qu’elle n’avait presque pas quitté la selle.
 
-Une mèche s’était échappée de sa longue tresse brune et lui collait à la joue. La poussière ternissait son armure claire aux bordures dorées ; sur le plastron se détachait un soleil levant. La fatigue creusait son jeune visage, mais ses yeux bleu-gris continuaient de suivre les mouvements de la foule.
+Une mèche s’était échappée de sa longue tresse noire et lui collait à la joue. La poussière ternissait son armure claire aux bordures dorées ; sur le plastron se détachait un soleil levant. La fatigue creusait son jeune visage, mais ses yeux marron continuaient de suivre les mouvements de la foule.
 
 Devant eux, les voyageurs se resserraient entre les échoppes de la Cité extérieure et la porte ouverte dans les remparts. Un homme poussait une brouette. Un autre jurait contre un ballot éventré. Au-dessus des têtes, Jana distinguait des maisons qui montaient vers d’autres murs, plus hauts encore.
 

@@ -220,7 +220,7 @@ test("chapter one publishes the French story and an English translation notice",
   const english = await readFile(fileForUrl(route), "utf8");
 
   assert.ok(french.includes("Le cheval s’arrêta avant qu’elle le lui demande."));
-  assert.ok(french.includes("longue tresse brune"));
+  assert.ok(french.includes("longue tresse noire"));
   assert.ok(french.includes("À Port Nyanzaru, donc."));
   assert.equal((french.match(/<h2\b/g) || []).length, 6);
   for (const text of ["Script V3", "Note de continuité", "Narration et dialogues", "Intention visuelle"]) {
