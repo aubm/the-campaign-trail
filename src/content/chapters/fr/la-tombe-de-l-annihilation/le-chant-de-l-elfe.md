@@ -26,7 +26,7 @@ Devant eux, les voyageurs se resserraient entre les échoppes de la Cité extér
 
 Elle prit place dans la file avec son cheval.
 
-— La bête reste dehors.
+— La bête reste dehors, dit un garde.
 
 Elle leva les yeux.
 
@@ -60,7 +60,7 @@ Elle cherchait une enseigne où manger lorsqu’un homme tomba à quelques pas d
 
 Deux autres sortirent du passage qui longeait une boutique.
 
-— Tu n’as pas fini de payer.
+— Tu n’as pas fini de payer, lança l’un d’eux.
 
 ---
 
@@ -74,7 +74,7 @@ L’homme au sol tenait une petite bourse contre sa poitrine. Ses vêtements por
 
 Le plus large des deux lui saisit le col.
 
-— Laissez-le se relever.
+— Laissez-le se relever, intervint Jana.
 
 Ils la regardèrent. Celui qui se tenait en retrait sourit en voyant ses affaires de voyage.
 
@@ -84,7 +84,7 @@ Elle posa son bagage contre le mur, sans quitter leurs mains des yeux.
 
 — Il dit qu’il a payé.
 
-— Tu tiens les comptes, maintenant ?
+— Tu tiens les comptes, maintenant ? répliqua le second homme.
 
 Le porteur tenta de ramper vers la rue. Une botte s’abattit sur sa main.
 
@@ -116,13 +116,13 @@ Il regarda l’endroit où il se tenait une seconde auparavant.
 
 Puis il cessa de sourire.
 
-— Attrape-la.
+— Attrape-la, ordonna l’homme au couteau à son compagnon.
 
 L’autre contourna les caisses.
 
 Jana recula vers la rue. Elle pouvait encore courir. Mais le porteur était resté au sol, entre elle et la lame.
 
-— Venez vers moi.
+— Venez vers moi, dit Jana au porteur.
 
 Il essaya de se lever.
 
@@ -136,7 +136,7 @@ Elle leva de nouveau la paume ; il lui saisit le poignet et la plaqua contre les
 
 Le bois craqua derrière son dos.
 
-— Fais encore ça.
+— Fais encore ça, la défia le second homme.
 
 Il serrait assez fort pour lui engourdir les doigts.
 
@@ -169,9 +169,9 @@ Elle le laissa.
 
 Un volet claqua.
 
-— Qu’est-ce que vous faites là-dessous ?
+— Qu’est-ce que vous faites là-dessous ? cria une femme à la fenêtre.
 
-— Ouvrez votre porte !
+— Ouvrez votre porte ! lui répondit Jana.
 
 La femme disparut de la fenêtre.
 
@@ -181,7 +181,7 @@ La porte ne s’ouvrait pas.
 
 Elle recula encore, le porteur contre elle. Il glissait. Elle ne pourrait pas le retenir longtemps.
 
-— Vous ! Allez chercher le Poing enflammé !
+— Vous ! Allez chercher le Poing enflammé ! lança une voix dans la rue.
 
 Une voix grave, habituée à se faire entendre.
 
@@ -189,7 +189,7 @@ Le second agresseur tourna la tête. Plusieurs passants s’étaient arrêtés �
 
 Enfin, un verrou grinça.
 
-— Ici !
+— Ici ! appela la femme.
 
 Jana poussa le porteur à l’intérieur. L’homme au couteau avançait toujours. Il gardait le bras près du corps, mais sa colère n’avait pas diminué.
 
@@ -217,7 +217,7 @@ Dans la boutique, le porteur respirait par petites secousses. Jana s’accroupit
 
 Il regardait la porte.
 
-— Ils sont partis. Regardez-moi.
+— Ils sont partis. Regardez-moi, reprit Jana.
 
 La boutiquière apporta une bassine. Jana lui demanda un linge propre, puis fit bouger les doigts du blessé. Ils répondaient.
 
@@ -252,13 +252,13 @@ Dehors, un vieux nain ramassa son bagage et le déposa près de la porte.
 
 Elle reconnut la voix qui avait appelé les passants.
 
-— Merci.
+— Merci, lui dit Jana.
 
 Il regarda le blessé, puis la boutiquière.
 
 — Vous avez encore besoin de bras ?
 
-— Mon garçon va le raccompagner.
+— Mon garçon va le raccompagner, répondit la boutiquière.
 
 Le nain acquiesça et s’éloigna.
 
@@ -306,7 +306,7 @@ Le repas arriva avant qu’elle ait décidé comment entamer la conversation. El
 
 Bran ne lui posa aucune question pendant les premières cuillerées.
 
-— Vous avez vu ce qui s’est passé ?
+— Vous avez vu ce qui s’est passé ? demanda enfin Jana.
 
 — La fin. Vous aviez besoin de témoins. Ils n’aiment guère travailler devant un public.
 
@@ -369,7 +369,7 @@ Bran la regarda un instant, puis posa son couteau.
 
 Bran lui raconta une conversation sur le port, lors d’une de ses escales. Il n’avait ni voyagé avec Cimber ni fait affaire avec lui ; leurs occupations les avaient simplement retenus au même endroit une partie de la matinée.
 
-— Pourquoi vous aurait-il donné son nom ?
+— Pourquoi vous aurait-il donné son nom ? demanda Jana.
 
 — Je lui avais donné le mien. C’est encore une coutume assez répandue.
 
@@ -399,7 +399,7 @@ Il y avait eu tant de lendemains, depuis, qu’elle avait cessé de les compter.
 
 Bran n’essaya pas de lui expliquer.
 
-— Il n’avait plus la force de partir avec moi. Il m’a seulement dit de trouver Cimber. Il était tellement certain que…
+— Il n’avait plus la force de partir avec moi, poursuivit Jana. Il m’a seulement dit de trouver Cimber. Il était tellement certain que…
 
 Elle s’interrompit.
 
@@ -421,7 +421,7 @@ Bran répondit à voix basse.
 
 Elle se raidit.
 
-— C’est ce qu’on dit. Elle chante un amour perdu en mer.
+— C’est ce qu’on dit, répondit Bran. Elle chante un amour perdu en mer.
 
 Jana écouta. Elle ne voyait ni corps ni visage, seulement des clients devenus silencieux.
 
@@ -516,7 +516,7 @@ Elle contempla la coque, les cordages, les hommes à leur travail. Le bateau exi
   <figcaption>La Sagesse des Mers attend au quai.</figcaption>
 </figure>
 
-— Et si Artus n’est plus à Port Nyanzaru ?
+— Et si Artus n’est plus à Port Nyanzaru ? demanda Jana.
 
 Le visage du nain devint plus sérieux.
 
@@ -546,7 +546,7 @@ Elle le regarda. Il n’ajouta rien.
 
 — Oui. Prévoyez d’être souvent trempée, sans être beaucoup rafraîchie.
 
-— Vous connaissez la jungle ?
+— Vous connaissez la jungle ? reprit Jana.
 
 — Depuis le bateau, elle est magnifique. Pour vous en parler de plus près, il faudra trouver quelqu’un d’autre.
 
