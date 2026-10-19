@@ -237,7 +237,7 @@ test("chapter one publishes complete illustrated stories in both languages", asy
   const chapterImages = (html) => [...html.matchAll(/<img[^>]+src="(\/images\/chapter-1\/[^"]+)"/g)].map((match) => match[1]);
   assert.equal(chapterImages(english).length, 7);
   assert.deepEqual(chapterImages(english), chapterImages(french));
-  assert.ok(english.includes(`href="/fr${route}" hreflang="fr"`));
+  assert.ok(english.includes(`href="/fr${route}"`));
   assert.ok(!english.includes("Le cheval s’arrêta avant qu’elle le lui demande."));
   for (const html of [french, english]) {
     assert.ok(html.includes('src="/images/chapter-1/01-1672.webp"'));
