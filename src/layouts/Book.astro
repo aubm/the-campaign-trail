@@ -4,6 +4,7 @@ import "@fontsource/cormorant-garamond/600.css";
 import "@fontsource/source-serif-4/400.css";
 import "@fontsource/source-serif-4/400-italic.css";
 import "../styles/book.css";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import { localizePath, messages, type Locale } from "../lib/i18n";
 interface Props {
   locale?: Locale;
@@ -36,6 +37,7 @@ const canonical = new URL(paths[locale], Astro.site);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <GoogleAnalytics />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
     <link rel="canonical" href={canonical} />

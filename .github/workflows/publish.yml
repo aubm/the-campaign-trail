@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ASTRO_TELEMETRY_DISABLED: 1
+      # Only deployed main builds receive the production measurement ID.
+      PUBLIC_GA_MEASUREMENT_ID: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PUBLIC_GA_MEASUREMENT_ID || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
