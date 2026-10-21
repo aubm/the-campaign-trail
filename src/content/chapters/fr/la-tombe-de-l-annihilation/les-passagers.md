@@ -456,7 +456,7 @@ Jana ramena son sac sur son épaule.
 
 *Avant midi · sur le pont*
 
-Bran les attendait près du grand mât. Un tieflin se tenait auprès de lui, un bagage posé à ses pieds.
+Bran les attendait près du grand mât. Un tieffelin se tenait auprès de lui, un bagage posé à ses pieds.
 
 Ses vêtements sombres étaient coupés avec soin. Malgré la chaleur, ses manches descendaient jusqu’aux poignets. Jana remarqua surtout son immobilité au milieu des hommes qui passaient avec leurs charges.
 
@@ -468,7 +468,7 @@ Le capitaine accueillit cette précision d’un hochement de tête.
 
 — Jana Coursevent. Adwayria. Voici Zarraï, qui voyage également jusqu’à Port Nyanzaru.
 
-Le tieflin inclina légèrement la tête.
+Le tieffelin inclina légèrement la tête.
 
 — Nous avons terminé de charger vos affaires, lui dit Bran. J’ai fait vérifier l’arrimage.
 
@@ -518,7 +518,7 @@ Elle attendit. Il n’ajouta rien.
 
 Jana baissa la tête pour resserrer une courroie de son sac.
 
-Adwayria examina le visage du tieflin. Elle semblait chercher s’il se moquait d’elle. Son expression ne lui apporta aucune réponse.
+Adwayria examina le visage du tieffelin. Elle semblait chercher s’il se moquait d’elle. Son expression ne lui apporta aucune réponse.
 
 — Il est à terre, maintenant, conclut-elle.
 
