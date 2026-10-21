@@ -2,6 +2,7 @@
 import { render } from "astro:content";
 import Book from "../../../../layouts/Book.astro";
 import { getCampaign, chapterUrl } from "../../../../lib/campaign";
+import { withBase } from "../../../../lib/paths";
 import {
   locales,
   contentKey,
@@ -53,7 +54,7 @@ const { Content } = await render(adventure);
     )}
     <figure class="panorama">
       <img
-        src={adventure.data.illustration.src}
+        src={withBase(adventure.data.illustration.src)}
         alt={adventure.data.illustration.alt}
         width="1672"
         height="941"

@@ -5,17 +5,19 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+    types: [opened, reopened, synchronize, closed]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: campaign-${{ github.ref }}
+  group: campaign-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     env:
       ASTRO_TELEMETRY_DISABLED: 1
@@ -31,6 +33,15 @@ jobs:
       - run: npm run check
       - run: npm run build
       - run: npm test
+      - name: Build and verify the PR preview
+        if: github.event_name == 'pull_request'
+        env:
+          PREVIEW_PR_NUMBER: ${{ github.event.pull_request.number }}
+          PUBLIC_GA_MEASUREMENT_ID: ""
+        run: |
+          npm run build
+          npm run test:preview
+          rm -f dist/CNAME
       - uses: actions/upload-artifact@v4
         with:
           name: website
@@ -48,8 +59,79 @@ jobs:
         with:
           name: website
           path: dist
-      - uses: peaceiris/actions-gh-pages@v4
+      - run: touch dist/.nojekyll
+      - uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
-          cname: the-campaign-trail.aubm.net
+          branch: gh-pages
+          folder: dist
+          clean-exclude: pr-preview/
+          force: false
+
+  preview:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.action != 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.actor != 'dependabot[bot]'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: website
+          path: dist
+      - name: Confirm this is still the latest open PR revision
+        id: current
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" > "$RUNNER_TEMP/pr.json"
+          if jq -e --arg sha "$EXPECTED_SHA" '.state == "open" and .head.sha == $sha' "$RUNNER_TEMP/pr.json" > /dev/null; then
+            echo 'deploy=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Deploy preview and update its PR comment
+        if: steps.current.outputs.deploy == 'true'
+        uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
+        with:
+          source-dir: dist
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          pages-base-url: the-campaign-trail.aubm.net
+          action: deploy
+          wait-for-pages-deployment: true
+          qr-code: false
+
+  remove-preview:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.action == 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.actor != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+      pages: read
+    steps:
+      # On close, use trusted default-branch files; the PR branch may be deleted.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Remove preview and update its PR comment
+        uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
+        with:
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          pages-base-url: the-campaign-trail.aubm.net
+          action: remove
+          wait-for-pages-deployment: true
+          qr-code: false

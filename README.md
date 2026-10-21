@@ -68,7 +68,7 @@ Chapters are sorted by `order` **within each adventure**, independent of filenam
 
 ## GitHub Pages
 
-The workflow follows `aubm/aubm-website`: npm on Node 24, PR validation, a build artifact, and `peaceiris/actions-gh-pages@v4` publishing `dist/` to `gh-pages` on pushes to `main`. Pull requests only validate; they do not deploy.
+The workflow uses npm on Node 24, validates the production build, and uploads a build artifact. Pushes to `main` publish `dist/` to the root of `gh-pages`. Pull requests also build and publish a separate preview after validation.
 
 After merging the setup PR and the first successful workflow:
 
@@ -77,6 +77,34 @@ After merging the setup PR and the first successful workflow:
 3. In DNS, create a CNAME record for `the-campaign-trail` pointing to `aubm.github.io` (not a repository URL).
 
 The generated site includes `CNAME`. Astro's `site` is `https://the-campaign-trail.aubm.net`; no repository `base` path is needed with this custom domain. If publishing to a repository subpath instead, update the URL handling first.
+
+### Automatic pull request previews
+
+Each open PR from a branch in this repository gets a stable URL:
+
+```text
+https://the-campaign-trail.aubm.net/pr-preview/pr-<number>/
+https://the-campaign-trail.aubm.net/pr-preview/pr-<number>/fr/
+```
+
+The workflow creates or updates the preview on `opened`, `reopened`, and `synchronize` events, and posts its URL in a single updated PR comment. It waits for Pages deployment before posting the comment. Closing or merging the PR removes its preview and updates the comment. Preview URLs are public and temporary; they are not private review environments.
+
+Pages must remain configured as **Deploy from a branch → gh-pages → / (root)**. The workflow requests `contents: write` and `pull-requests: write` only for preview deployment/removal, plus read access to Pages and Actions to wait for deployment. No additional service, DNS record, or secret is needed. Fork and Dependabot PRs still build and test but do not receive automatic deployments or comments because their tokens have restricted write permissions. The workflow uses `pull_request`, never executes fork code with `pull_request_target`, and builds in a separate read-only job.
+
+The default-branch deployment preserves `pr-preview/` with `clean-exclude` and uses `force: false` to retain other deployments. Both deployment actions are pinned to commit SHAs. `public/CNAME` and `.nojekyll` stay at the production root; the PR artifact excludes `CNAME`. Deployment comments are provided by [PR Preview Action](https://github.com/rossjrw/pr-preview-action).
+
+`PREVIEW_PR_NUMBER` enables Astro's `/pr-preview/pr-N/` base path. Helpers cover page navigation, language switches, image URLs and responsive image candidates; a Sätteri plugin covers links and HTML figures inside Markdown. Preview pages include `noindex, nofollow`, and Analytics is disabled even if a measurement ID is supplied locally. Production URLs and analytics behavior remain unchanged when the variable is unset.
+
+To reproduce a preview locally:
+
+```sh
+PREVIEW_PR_NUMBER=18 npm run build
+PREVIEW_PR_NUMBER=18 npm run test:preview
+PREVIEW_PR_NUMBER=18 npm run preview
+# Open http://localhost:4321/pr-preview/pr-18/fr/
+```
+
+Run the normal `npm run build && npm test` without `PREVIEW_PR_NUMBER` to return to the production build. PR validation runs both build modes. Existing PR branches should incorporate this workflow change and receive a new push to generate their first preview; merging this setup alone does not retroactively trigger their workflows.
 
 ## Google Analytics
 

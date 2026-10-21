@@ -1,6 +1,7 @@
 ---
 import { render } from "astro:content";
 import Book from "../../../../layouts/Book.astro";
+import { withBase, withBaseSrcset } from "../../../../lib/paths";
 import {
   getCampaign,
   adventureUrl,
@@ -70,8 +71,8 @@ const { Content, headings } = await render(chapter);
     </header>
     <figure class="chapter-illustration section-wrap">
       <img
-        src={chapter.data.illustration.src}
-        srcset={chapter.data.illustration.srcset}
+        src={withBase(chapter.data.illustration.src)}
+        srcset={withBaseSrcset(chapter.data.illustration.srcset)}
         sizes="(max-width: 850px) calc(100vw - 48px), (max-width: 1256px) calc(100vw - 96px), 1160px"
         alt={chapter.data.illustration.alt}
         width="1672"

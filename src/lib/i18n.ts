@@ -1,10 +1,12 @@
+import { stripBase, withBase } from "./paths";
+
 export const locales = ["en", "fr"] as const;
 export type Locale = (typeof locales)[number];
 
 // Keep existing English URLs; French mirrors them under /fr/.
 export function localizePath(path: string, locale: Locale): string {
-  const unprefixed = path.replace(/^\/fr(?=\/|$)/, "") || "/";
-  return locale === "fr" ? `/fr${unprefixed}` : unprefixed;
+  const unprefixed = stripBase(path).replace(/^\/fr(?=\/|$)/, "") || "/";
+  return withBase(locale === "fr" ? `/fr${unprefixed}` : unprefixed);
 }
 export const contentKey = (id: string) => id.replace(/^fr\//, "");
 

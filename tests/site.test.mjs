@@ -85,6 +85,9 @@ test("chapter order and previous/next boundaries stay inside their adventure", a
   }
 });
 test("production domain survives the build", async () => {
+  const home = await readFile(join(root, "index.html"), "utf8");
+  assert.doesNotMatch(home, /name="robots" content="noindex/);
+  assert.doesNotMatch(home, /(?:href|src)="\/pr-preview\//);
   assert.equal(
     (await readFile(join(root, "CNAME"), "utf8")).trim(),
     "the-campaign-trail.aubm.net",
