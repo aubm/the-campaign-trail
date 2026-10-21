@@ -1,0 +1,170 @@
+[
+  {
+    "number": "01",
+    "file": "01 - Les conditions du renouvellement - V1 - VALIDEE.png",
+    "size": 2382113,
+    "sha256": "f271d128703c1885749f56c3ca5d9120611955a4dacaf266b4d4acdd1406b583",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-2/01-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 79778
+      },
+      {
+        "path": "public/images/chapter-2/01-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 307650
+      }
+    ]
+  },
+  {
+    "number": "02",
+    "file": "02 - J'arrive - V1 - VALIDEE.png",
+    "size": 2450715,
+    "sha256": "cc3b475c01d4f7d6e8d2b0be10772f6074d1895c3658a88afda80bf38256599a",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-2/02-640.webp",
+        "width": 640,
+        "height": 960,
+        "size": 175354
+      },
+      {
+        "path": "public/images/chapter-2/02-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "size": 333504
+      }
+    ]
+  },
+  {
+    "number": "03",
+    "file": "03 - C'est un enfant - V2 - VALIDEE.png",
+    "size": 2542770,
+    "sha256": "3688abccdf80d75ea34f77b1dea42dcea9fa06531f4e124b516cfe2d524b88ff",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-2/03-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 90486
+      },
+      {
+        "path": "public/images/chapter-2/03-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 334564
+      }
+    ]
+  },
+  {
+    "number": "04",
+    "file": "04 - Laisse tomber Doran - V2 - VALIDEE.png",
+    "size": 3003418,
+    "sha256": "b9cefce955e3af968a5537b5e2fba21c6baab27ef3becdb02564671bfea10112",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-2/04-640.webp",
+        "width": 640,
+        "height": 427,
+        "size": 123786
+      },
+      {
+        "path": "public/images/chapter-2/04-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "size": 467298
+      }
+    ]
+  },
+  {
+    "number": "05",
+    "file": "05 - Les doigts rougis - V4 - VALIDEE.png",
+    "size": 2854612,
+    "sha256": "97245f3ef55dd15311a697f952bf49fff4485cd06efc72ecda79d986803cab04",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-2/05-640.webp",
+        "width": 640,
+        "height": 427,
+        "size": 128368
+      },
+      {
+        "path": "public/images/chapter-2/05-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "size": 440090
+      }
+    ]
+  },
+  {
+    "number": "06",
+    "file": "06 - Les passagers - V4 - VALIDEE.png",
+    "size": 3062414,
+    "sha256": "037ea7288440e4657e84460c369a8d1b97082d658dd4e36a6c26c6592d184587",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-2/06-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 115294
+      },
+      {
+        "path": "public/images/chapter-2/06-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 502750
+      }
+    ]
+  },
+  {
+    "number": "07",
+    "file": "07 - Depuis la cachette du rat - V4 - VALIDEE.png",
+    "size": 2376723,
+    "sha256": "7b9e34f5cdba6b97874c6b4115072cac272b439a0c531e93d41a6bcc8f8605ae",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-2/07-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 88506
+      },
+      {
+        "path": "public/images/chapter-2/07-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 334996
+      }
+    ]
+  }
+]
