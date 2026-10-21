@@ -466,7 +466,7 @@ Ses vêtements sombres étaient coupés avec soin. Malgré la chaleur, ses manch
 
 Le capitaine accueillit cette précision d’un hochement de tête.
 
-— Jana Coursevent. Adwayria. Voici Zarraï, qui voyage également jusqu’à Port Nyanzaru.
+— Jana. Adwayria. Voici Zarraï, qui voyage également jusqu’à Port Nyanzaru.
 
 Le tieffelin inclina légèrement la tête.
 
