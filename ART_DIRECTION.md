@@ -25,3 +25,13 @@ Prompt:
 Path: `public/images/omu-ras-nsi.webp`. 1672 × 941 pixels, optimized WebP (~284 KB).
 
 A fantasy illustration created with the image generation tool using a **user-supplied Ras Nsi board-game box illustration** as the visual reference. The new scene removes the box text and branding and expands the view to show Ras Nsi amid jungle, vine-covered ruins, fallen statues, and distant structures of Omu. It keeps the dramatic painterly fantasy treatment and the fiery weapon. This is the adventure-cover and chapter-0 illustration for the French and English pages; the website-wide home hero remains unchanged.
+
+## Chapter 2 — Les passagers
+
+Paths: `public/images/chapter-2/01-*.webp` through `07-*.webp`.
+
+These seven illustrations use the final, user-approved PNGs from Drive: versions V1, V1, V2, V2, V4, V4, and V4 respectively. `artwork/chapter-2-sources.json` records their filenames, SHA-256 hashes, original dimensions, and generated variants so later updates can identify the approved sources precisely.
+
+Each image retains its complete composition and has a native-resolution WebP plus a 640-pixel-wide variant (quality 90, method 6; Lanczos downsampling). No additional retouching was applied during integration. Image 5 keeps Adwayria's surprised, slightly wary expression; image 6 keeps her muted green eyes, Jana's brown eyes, and the sharper foreground; image 7 uses the distant boat and corrected character proportions. Jana retains round ears and no freckles.
+
+The first scene replaces the chapter's placeholder hero in both languages. Six figures accompany the French story, with the rat's reveal preserved and the portrait scene constrained to the existing portrait layout. The English page retains its translation-pending notice.

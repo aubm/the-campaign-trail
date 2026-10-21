@@ -7,8 +7,8 @@ order: 2
 sample: false
 translationPending: true
 illustration:
-  src: /images/chapter-1/07-1672.webp
-  srcset: "/images/chapter-1/07-640.webp 640w, /images/chapter-1/07-1672.webp 1672w"
-  alt: "Jana and Bran on the quay beside the Wisdom of the Seas, still moored while cargo is loaded."
-  caption: "The Wisdom of the Seas, before departure."
+  src: /images/chapter-2/01-1672.webp
+  srcset: "/images/chapter-2/01-640.webp 640w, /images/chapter-2/01-1672.webp 1672w"
+  alt: "In his study, Zarraï sets a quill beside the contract, facing the gnome Veller across the desk."
+  caption: "The terms of renewal."
 ---

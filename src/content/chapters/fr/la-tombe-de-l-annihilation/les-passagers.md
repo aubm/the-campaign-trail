@@ -6,10 +6,10 @@ summary: "Zarraï règle ses affaires avant le voyage. Sur la Sagesse des Mers, 
 order: 2
 sample: false
 illustration:
-  src: /images/chapter-1/07-1672.webp
-  srcset: "/images/chapter-1/07-640.webp 640w, /images/chapter-1/07-1672.webp 1672w"
-  alt: "Jana et Bran sur le quai devant la Sagesse des Mers, encore amarrée, pendant le chargement."
-  caption: "La Sagesse des Mers, avant le départ."
+  src: /images/chapter-2/01-1672.webp
+  srcset: "/images/chapter-2/01-640.webp 640w, /images/chapter-2/01-1672.webp 1672w"
+  alt: "Dans son étude, Zarraï pose une plume près du contrat, face au gnome Veller assis de l’autre côté du bureau."
+  caption: "Les conditions du renouvellement."
 ---
 
 ## Un entretien au manoir
@@ -172,6 +172,11 @@ Zarraï regarda les lettres qui attendaient encore sur le bureau.
 
 Il posa la plume avant que l’enfant ait besoin de le lui demander une deuxième fois.
 
+<figure class="story-illustration story-illustration--portrait">
+  <img src="/images/chapter-2/02-1024.webp" srcset="/images/chapter-2/02-640.webp 640w, /images/chapter-2/02-1024.webp 1024w" sizes="(max-width: 468px) calc(100vw - 48px), 420px" width="1024" height="1536" loading="lazy" decoding="async" alt="Zarraï se tourne vers son jeune frère, qui apparaît dans l’entrebâillement de la porte de l’étude." />
+  <figcaption>« J’arrive. »</figcaption>
+</figure>
+
 ---
 
 ## Le petit voleur
@@ -237,6 +242,11 @@ L’extrémité de son bâton suivit le mouvement. L’homme au cordage se baiss
 — Alors dites-leur de reculer !
 
 Elle chercha derrière elle sans quitter l’équipage des yeux, le bras tendu en travers d’un passage entre les sacs. Jana ne voyait qu’une caisse ouverte et le bas d’une toile qui remuait contre le pont.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-2/03-1672.webp" srcset="/images/chapter-2/03-640.webp 640w, /images/chapter-2/03-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Adwayria, rouge de colère, brandit son bâton face à Doran, la seconde demi-orque, sous les regards des marins rassemblés sur le pont." />
+  <figcaption>« C’est un enfant ! »</figcaption>
+</figure>
 
 La seconde avança la main vers le bâton.
 
@@ -346,6 +356,11 @@ Il posa une main sur l’épaule de Doran et lui donna une petite tape.
 
 — Laisse tomber, Doran.
 
+<figure class="story-illustration">
+  <img src="/images/chapter-2/04-1536.webp" srcset="/images/chapter-2/04-640.webp 640w, /images/chapter-2/04-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="Bran pose une main sur l’épaule de Doran ; Adwayria serre encore son bâton, Jana observe et un rat dépasse des sacs." />
+  <figcaption>« Laisse tomber, Doran. »</figcaption>
+</figure>
+
 — Bran, ces bêtes rongent les sacs, mangent les réserves et apportent des maladies.
 
 — Tu as raison. Elle va le déposer à terre. Nous serons débarrassés de lui et tu pourras reprendre le chargement.
@@ -424,6 +439,11 @@ Jana sentit un sourire lui venir. Elle le retint en voyant les marques rouges su
 
 Adwayria lui tendit la main, encore un peu méfiante. Jana vérifia les articulations. Les doigts bougeaient normalement.
 
+<figure class="story-illustration">
+  <img src="/images/chapter-2/05-1536.webp" srcset="/images/chapter-2/05-640.webp 640w, /images/chapter-2/05-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="Sur le quai, Jana examine les doigts rougis d’Adwayria, dont le visage exprime une légère surprise et de la méfiance." />
+  <figcaption>Les doigts rougis.</figcaption>
+</figure>
+
 — Rien de cassé. Vous pouvez les passer sous l’eau fraîche.
 
 — Vous êtes guérisseuse ?
@@ -483,6 +503,11 @@ Adwayria regarda successivement les deux hommes.
 — Vous vous connaissez depuis longtemps ?
 
 — J’ai fait affaire avec sa famille, répondit Bran.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-2/06-1672.webp" srcset="/images/chapter-2/06-640.webp 640w, /images/chapter-2/06-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Bran présente les passagers près du grand mât : Adwayria s’adresse à Zarraï, vêtu de noir, tandis que Jana suit leur échange." />
+  <figcaption>Les passagers.</figcaption>
+</figure>
 
 — Alors vous êtes déjà allé au Chult ? demanda-t-elle à Zarraï.
 
@@ -585,3 +610,8 @@ La coque glissa lentement devant sa cachette. La jeune fille s’éloigna avec e
 Bientôt, il ne vit plus que la poupe.
 
 Le rat attendit que les pas se soient éloignés. Il ramassa son grain et se glissa entre les planches, vers les petits cris qui l’attendaient dans l’obscurité.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-2/07-1672.webp" srcset="/images/chapter-2/07-640.webp 640w, /images/chapter-2/07-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Au premier plan, le rat tient son grain sur les pierres du quai ; au loin, la Sagesse des Mers s’éloigne sur le fleuve et Adwayria lui adresse un signe depuis le pont." />
+  <figcaption>Depuis la cachette du rat.</figcaption>
+</figure>
