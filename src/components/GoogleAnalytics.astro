@@ -1,6 +1,7 @@
 ---
+import { isPreview } from "../lib/paths";
 const measurementId = (import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? "").trim();
-const enabled = import.meta.env.PROD && measurementId !== "";
+const enabled = import.meta.env.PROD && !isPreview && measurementId !== "";
 
 if (enabled && !/^G-[A-Z0-9]+$/.test(measurementId)) {
   throw new Error(

@@ -1,6 +1,7 @@
 ---
 import { render } from "astro:content";
 import Book from "../../../layouts/Book.astro";
+import { withBase } from "../../../lib/paths";
 import { getPublications } from "../../../lib/publications";
 import { locales, messages, contentKey, localizePath } from "../../../lib/i18n";
 export async function getStaticPaths() {
@@ -66,7 +67,7 @@ const facts = [
   </header>
   <figure class="publication-hero section-wrap">
     <img
-      src={data.illustration.src}
+      src={withBase(data.illustration.src)}
       alt={data.illustration.alt}
       width="1672"
       height="941"

@@ -6,10 +6,12 @@ import NotFound from "../components/NotFound.astro";
 
 <script>
   // GitHub Pages always serves the root 404 document for unknown paths.
-  if (
-    window.location.pathname.startsWith("/fr/") &&
-    window.location.pathname !== "/fr/404/"
-  ) {
-    window.location.replace("/fr/404/");
+  // Detect preview paths even when this is the production 404 document.
+  const path = window.location.pathname;
+  const preview = path.match(/^\/pr-preview\/pr-[1-9]\d*(?=\/)/)?.[0] ?? "";
+  const page = path.slice(preview.length);
+  const target = `${preview}${page.startsWith("/fr/") ? "/fr/404/" : "/404.html"}`;
+  if (path !== target && (preview || page.startsWith("/fr/"))) {
+    window.location.replace(target);
   }
 </script>

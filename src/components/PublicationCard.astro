@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { publicationUrl } from "../lib/publications";
+import { withBase } from "../lib/paths";
 interface Props {
   publication: CollectionEntry<"publications">;
 }
@@ -16,7 +17,7 @@ const fr = data.locale === "fr";
     aria-label={data.title}
   >
     <img
-      src={data.illustration.src}
+      src={withBase(data.illustration.src)}
       alt={data.illustration.alt}
       width="1672"
       height="941"
