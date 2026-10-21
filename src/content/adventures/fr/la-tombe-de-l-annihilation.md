@@ -17,7 +17,7 @@ Cette chronique en cours de publication raconte **notre aventure**, celle des pe
 
 Tout commence **trois ans avant la campagne**. L’archéologue Erdan Naïlo et ses compagnons atteignent Omu, une cité perdue que la jungle a lentement engloutie. Ce qu’ils y découvrent changera à jamais le cours de leur histoire.
 
-Je publierai la suite **chapitre après chapitre**. Le prologue est disponible en français et en anglais. Le premier chapitre, **Le Chant de l’Elfe**, est illustré et disponible lui aussi en français et en anglais. Le deuxième chapitre, **Les passagers**, est disponible en français.
+Je publierai la suite **chapitre après chapitre**. Le prologue est disponible en français et en anglais. Le premier chapitre, **Le Chant de l’Elfe**, est illustré et disponible lui aussi en français et en anglais. Le deuxième chapitre, **Les passagers**, est également disponible dans les deux langues.
 
 <aside class="spoiler-warning" role="note" aria-label="Avertissement sur les spoilers">
   <strong>Attention — spoilers sur le module officiel.</strong>
