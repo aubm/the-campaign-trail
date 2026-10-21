@@ -200,7 +200,7 @@ Une jeune demi-elfe était acculée près du bastingage. Ses cheveux bruns s’�
 
 Face à elle, une demi-orque aux manches retroussées tenait un gourdin court.
 
-— Posez ça.
+— Posez ça, ordonna la demi-orque.
 
 — Pour que vous recommenciez ?
 
@@ -220,7 +220,7 @@ Sa voix se brisa sur le dernier mot. Elle frappa le pont du bout de son bâton, 
 
 — Ils ont toujours faim.
 
-Elle ouvrit de grands yeux, suffoquée.
+Adwayria ouvrit de grands yeux, suffoquée.
 
 — Vous vous entendez parler ? Je lui ai parlé, moi ! Il cherchait de quoi nourrir sa famille !
 
@@ -250,9 +250,9 @@ La seconde se tourna vers elle.
 
 — Encore une ?
 
-— Quelqu’un est blessé ?
+— Quelqu’un est blessé ? demanda Jana.
 
-— Pas encore !
+— Pas encore ! lança Adwayria.
 
 Elle ramena son bâton contre elle, puis le pointa de nouveau vers le gourdin.
 
@@ -264,9 +264,9 @@ La seconde désigna le bâton d’un mouvement du menton.
 
 — Commencez par elle.
 
-— Il suffit de le laisser partir ! Je vais le ramener auprès de sa famille.
+— Il suffit de le laisser partir ! protesta Adwayria. Je vais le ramener auprès de sa famille.
 
-— Sa famille aussi, il faudrait s’en occuper.
+— Sa famille aussi, il faudrait s’en occuper, répliqua la seconde.
 
 — Essayez donc !
 
@@ -276,11 +276,11 @@ Cette fois, la seconde leva sa main libre.
 
 — Qu’il vienne ! Vous allez lui expliquer !
 
-— Qu’est-ce qu’il a pris ?
+— Qu’est-ce qu’il a pris ? demanda Jana.
 
-— Du grain !
+— Du grain ! répondit la seconde.
 
-— Pour nourrir sa famille !
+— Pour nourrir sa famille ! insista Adwayria.
 
 — Doran ?
 
@@ -318,21 +318,21 @@ Puis le rat.
 
 Bran pinça les lèvres. Il passa une main sur sa barbe, sans tout à fait réussir à cacher le sourire qui venait de lui échapper.
 
-— Il a peur !
+— Il a peur ! s’écria Adwayria.
 
-— Oui. Avec tout ce monde autour de lui, je le comprends.
+— Oui, répondit Bran. Avec tout ce monde autour de lui, je le comprends.
 
 — Vous voyez bien qu’il est tout petit !
 
-— Laisse-le dans la cale une semaine et tu verras.
+— Laisse-le dans la cale une semaine et tu verras, intervint la seconde.
 
 Un rire parcourut l’équipage.
 
-— Il n’y a rien de drôle !
+— Il n’y a rien de drôle ! protesta Adwayria.
 
 Elle avait presque crié. Bran leva la main vers les marins, et les rires retombèrent.
 
-— Je l’ai trouvé dans un sac éventré. Elle s’est mise entre nous. J’ai essayé de la déplacer, elle m’a frappé sur les doigts.
+— Je l’ai trouvé dans un sac éventré, reprit la seconde. Elle s’est mise entre nous. J’ai essayé de la déplacer, elle m’a frappé sur les doigts.
 
 — Vous avez essayé de m’arracher mon bâton !
 
@@ -472,7 +472,7 @@ Le tieflin inclina légèrement la tête.
 
 — Nous avons terminé de charger vos affaires, lui dit Bran. J’ai fait vérifier l’arrimage.
 
-— Merci.
+— Merci, répondit Zarraï.
 
 — Si votre famille me confie encore quelque chose, je tiens à pouvoir le livrer en bon état.
 
@@ -490,7 +490,7 @@ Adwayria regarda successivement les deux hommes.
 
 — Moi non plus. Syndra m’a écrit pour me demander de venir. Vous connaissez Syndra ?
 
-— De nom.
+— De nom, répondit Zarraï.
 
 Bran se pencha pour éviter une vergue qu’on déplaçait derrière lui.
 
@@ -522,7 +522,7 @@ Adwayria examina le visage du tieflin. Elle semblait chercher s’il se moquait 
 
 — Il est à terre, maintenant, conclut-elle.
 
-— Tant mieux.
+— Tant mieux, répondit Zarraï.
 
 Un marin leur demanda de libérer le passage. Zarraï ramassa son bagage et les accompagna vers le bastingage.
 
