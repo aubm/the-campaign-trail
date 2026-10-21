@@ -78,6 +78,24 @@ After merging the setup PR and the first successful workflow:
 
 The generated site includes `CNAME`. Astro's `site` is `https://the-campaign-trail.aubm.net`; no repository `base` path is needed with this custom domain. If publishing to a repository subpath instead, update the URL handling first.
 
+## Google Analytics
+
+Google Analytics 4 is optional. The shared layout adds the asynchronous Google tag to all English and French pages only when `PUBLIC_GA_MEASUREMENT_ID` is set for a production build. Development and GitHub Actions PR builds omit it. An empty value disables Analytics; a nonempty value must start with `G-` and contain only uppercase letters and numbers after the prefix, otherwise the production build fails with a configuration error.
+
+### Set up the deployed site
+
+1. In [Google Analytics](https://analytics.google.com/), create a GA4 property for **The Campaign Trail** and add a **Web** data stream for `https://the-campaign-trail.aubm.net`. See [Google's setup guide](https://support.google.com/analytics/answer/9304153?hl=en).
+2. In **Admin → Data streams**, open the web stream and copy its **Measurement ID** (`G-…`).
+3. In this repository's **Settings → Secrets and variables → Actions → Variables**, create a **repository variable** named `PUBLIC_GA_MEASUREMENT_ID` with that ID. Use a variable, not a secret: the ID is public in the generated HTML.
+4. Merge this change. If it is already merged, run **Actions → Build and publish → Run workflow** on `main`. The ID is embedded at build time, so changing or removing it always requires a new build and deployment.
+5. Once deployment finishes, visit the live site and use [Tag Assistant](https://tagassistant.google.com/) and Analytics' **Realtime** report to check traffic, including French pages and chapters. Initial data can take up to 30 minutes to appear.
+
+There is no need to paste another tag or install Google Tag Manager. Normal page loads send a `page_view` through the standard GA4 configuration; installing a second copy would duplicate tracking.
+
+### Verify locally
+
+Copy `.env.example` to `.env`, set a measurement ID (prefer a separate test property), then run `npm run build` and `npm run preview`. Production previews with an ID send real Analytics data; `npm run dev` omits the tag even when an ID is present. Leave the value empty to build without Analytics. To disable the deployed tag, remove the repository variable and run the workflow on `main` again.
+
 ## Artwork
 
 `public/images/the-long-road.webp` is an original AI-generated concept illustration, made with the built-in image generation tool. It establishes a painterly fantasy direction without reusing official artwork. The full prompt is preserved in `ART_DIRECTION.md` for iteration.
