@@ -334,9 +334,9 @@ Elle avait presque crié. Bran leva la main vers les marins, et les rires retomb
 
 — Je l’ai trouvé dans un sac éventré, reprit la seconde. Elle s’est mise entre nous. J’ai essayé de la déplacer, elle m’a frappé sur les doigts.
 
-— Vous avez essayé de m’arracher mon bâton !
+— Vous m’avez frappée sur les doigts avec votre gourdin ! protesta Adwayria.
 
-— Pour éviter de le recevoir dans les dents.
+— Et vous sur les miens, répliqua Doran. Posez ce bâton avant qu’on recommence.
 
 Bran regarda les doigts de sa seconde, puis le bâton qu’Adwayria serrait toujours.
 
