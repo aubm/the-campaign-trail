@@ -1,0 +1,366 @@
+[
+  {
+    "number": "01",
+    "file": "01 - Les poissons ont peut-être des choses à nous dire - V1 - VALIDEE.png",
+    "version": "V1",
+    "driveUrl": "https://drive.google.com/file/d/1QpTyM5YqGE25_MPu-ba3Ws5c1d6F-fts/view",
+    "size": 2940151,
+    "sha256": "c37468595e4ca5d840bd90f76aefa7a68b49ac26f264c6ab7e7ddb7d8c107ca0",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/01-640.webp",
+        "width": 640,
+        "height": 480,
+        "size": 138030,
+        "sha256": "7e2d3bc5466032f3d5131088f26009f020bdd8ce72d16f4a3a3468364bfdaf8c"
+      },
+      {
+        "path": "public/images/chapter-3/01-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "size": 465022,
+        "sha256": "ad9b61cbb231d0ce1fdc85921e268de6d3c6048c4082c9904d129bcc185ee041"
+      }
+    ]
+  },
+  {
+    "number": "02",
+    "file": "02 - Une invitée à quatre pattes - V2 - VALIDEE.png",
+    "version": "V2",
+    "driveUrl": "https://drive.google.com/file/d/1E-Tp3SRm5q6DlvkiJ7g6NgyHHV1ZYbGJ/view",
+    "size": 2700458,
+    "sha256": "d429a2297716d8939616fdc6584a494c9f72b54a559e407186ccabf540bfd73b",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/02-640.webp",
+        "width": 640,
+        "height": 427,
+        "size": 110742,
+        "sha256": "5f9801875e4306b951b34660a0da05cd8c96a98a59e4b04285c9b0e07048b27d"
+      },
+      {
+        "path": "public/images/chapter-3/02-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "size": 398706,
+        "sha256": "711f6f0dbabb482c2fa961371b404467a38f8bfaf2d1d467127f5ad78e20d206"
+      }
+    ]
+  },
+  {
+    "number": "03",
+    "file": "03 - Le pain de Ghaar - V1 - VALIDEE.png",
+    "version": "V1",
+    "driveUrl": "https://drive.google.com/file/d/1oXGARCtZdKKfMuFOy61LCOoSlBtgBnwu/view",
+    "size": 2960033,
+    "sha256": "d4fc3b7ca7b879fe7e4d8242df244da06092766c99ab254b16b535082ce43b29",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/03-640.webp",
+        "width": 640,
+        "height": 427,
+        "size": 116768,
+        "sha256": "4adeb24f04f570dab9f0ea76041ee8e99c87f70a5f90331a4edfc078c7b1b426"
+      },
+      {
+        "path": "public/images/chapter-3/03-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "size": 458002,
+        "sha256": "0df6aaeafc817da901bf13e3fa5c63b17b390025a749b86177ecd6db58567c20"
+      }
+    ]
+  },
+  {
+    "number": "04",
+    "file": "04 - Les terres inconnues du Chult - V5 - VALIDEE.png",
+    "version": "V5",
+    "driveUrl": "https://drive.google.com/file/d/1Umm6-hhruVT5PY7Uf4F_rkE9KJQsk3Wp/view",
+    "size": 2494469,
+    "sha256": "e5dd0435577c0cccdf652a4d8e1c850663792b602c9ec7420aaa801d68de6936",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/04-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 91544,
+        "sha256": "7b9442d4e38d108c25ebf7d62d950cc8ed88235e1b38ac0e92c66b9765f7359f"
+      },
+      {
+        "path": "public/images/chapter-3/04-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 363522,
+        "sha256": "79f812fad898c990b33c3cb8b709a0b9ec4d1aebf68dde8307de291893e9d7c5"
+      }
+    ]
+  },
+  {
+    "number": "05",
+    "file": "05 - Zaroum à l’horizon - V3 - VALIDEE.png",
+    "version": "V3",
+    "driveUrl": "https://drive.google.com/file/d/1q_iA_XDzvOpJTOk03XUk-gnr0cAkcw6s/view",
+    "size": 2781703,
+    "sha256": "5a3e8503e3a3d7076573134de993ccc0bcbb36e12b6913c0f7a7de3e6371d72f",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/05-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 99882,
+        "sha256": "bd80c1b05e2e15d531908499776644663d7cf2a4039702342b3b0be13c708faa"
+      },
+      {
+        "path": "public/images/chapter-3/05-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 430874,
+        "sha256": "3e5b56792be7de7d0bd80dfb23b35dd151d7445e66c286cb8136cf7195851d65"
+      }
+    ]
+  },
+  {
+    "number": "06",
+    "file": "06 - Les premiers grappins - V1 - VALIDEE.png",
+    "version": "V1",
+    "driveUrl": "https://drive.google.com/file/d/1-KhZPxk0jdrMgobuXtQzWHJHyrdNaCu2/view",
+    "size": 3016673,
+    "sha256": "f3741e8cb296a4f8ffe60bbe6211fb38c206bf40fa62bb8d49672878650c61f7",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/06-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 109140,
+        "sha256": "a41b9f1aec6b580195378c2b94759511591f1b723da44c4a29b87744b6e39266"
+      },
+      {
+        "path": "public/images/chapter-3/06-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 497476,
+        "sha256": "5759e33b666ef93443da75dae112038d7765c6075a0606b35666ef6bd6d49bbc"
+      }
+    ]
+  },
+  {
+    "number": "07",
+    "file": "07 - Jana au secours d’un marin - V2 - VALIDEE.png",
+    "version": "V2",
+    "driveUrl": "https://drive.google.com/file/d/1-mujPWqVNx4f2xjcFGITewxSagwqWfVe/view",
+    "size": 3169583,
+    "sha256": "2d453b20e11e0f77fefdb26d5eb53ac63e3358e3cc98364e750c10de614ab19c",
+    "dimensions": [
+      1671,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/07-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 117640,
+        "sha256": "095189f85918768f032d670dbb2b7d373c3fbd2f5b2f9b4dd8762c2d7592e598"
+      },
+      {
+        "path": "public/images/chapter-3/07-1671.webp",
+        "width": 1671,
+        "height": 941,
+        "size": 535670,
+        "sha256": "43c64081edec0cbcf127bcba7cce23d96fb7b5c2c9bcd72e2599ad85e36773fd"
+      }
+    ]
+  },
+  {
+    "number": "08",
+    "file": "08 - Zarraï, une ouverture décisive - V2 - VALIDEE.png",
+    "version": "V2",
+    "driveUrl": "https://drive.google.com/file/d/18k89KKd57Eu1FYqQN3a2utd15N3mUSNp/view",
+    "size": 2922516,
+    "sha256": "d77dfa77300851b6d4828db24fbcd12f2353f11335da8dd51a6fad7e8e271921",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/08-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 107494,
+        "sha256": "79d2b35d13b1ba575da139e3e14ca9c703c00477a7ef35e772e033f44e03cfeb"
+      },
+      {
+        "path": "public/images/chapter-3/08-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 475382,
+        "sha256": "f1403af1d6015be24941aaeb2c3105ff25bf2ede789a0bb690994111c8a19a85"
+      }
+    ]
+  },
+  {
+    "number": "09",
+    "file": "09 - Erdan et le malheureux Ghaar - V4 - VALIDEE.png",
+    "version": "V4",
+    "driveUrl": "https://drive.google.com/file/d/1wpDGXSgmz8iNN3YzjH8UoWnMn_5GIy-k/view",
+    "size": 3094201,
+    "sha256": "0041b03db9d1a005190d965136ec8c08f0256009e98355b0243b91fd03fa3f1a",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/09-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 114704,
+        "sha256": "fb455e1b5345cba5f3ff044643985b66c5cc2b930d40b18e5c04f05e7bdaafe3"
+      },
+      {
+        "path": "public/images/chapter-3/09-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 542662,
+        "sha256": "ca99a9ad379380f02cde62dab25003865a56c5352cceeeb8532f9a47500af69d"
+      }
+    ]
+  },
+  {
+    "number": "10",
+    "file": "10 - La chute de Doran - V2 - VALIDEE.png",
+    "version": "V2",
+    "driveUrl": "https://drive.google.com/file/d/1ul9UmstUJZ9HvZLkrqTgrxCG2CshIq_5/view",
+    "size": 2807405,
+    "sha256": "8b4f5afa9117e1cc51d72c82b6ce27b1fe8e474ed01cee735276c42286131d6b",
+    "dimensions": [
+      1670,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/10-640.webp",
+        "width": 640,
+        "height": 361,
+        "size": 99348,
+        "sha256": "3cc7b294356e1b1063e7d08b763ab6fe8d177c0536d52755bd2b44c5cb2569e2"
+      },
+      {
+        "path": "public/images/chapter-3/10-1670.webp",
+        "width": 1670,
+        "height": 941,
+        "size": 431168,
+        "sha256": "5331aefe513e682f5bfb27ce5bc8e1bcc2eaa7b902db54c3d39421f839630fe8"
+      }
+    ]
+  },
+  {
+    "number": "11",
+    "file": "11 - La colère d’Adwayria - V4 - VALIDEE.png",
+    "version": "V4",
+    "driveUrl": "https://drive.google.com/file/d/150K7O7EYuW3nP8Vj2Geh6TMxjL2PuR2G/view",
+    "size": 3153399,
+    "sha256": "0f0fbc6c1caa673cec3da55a678b7ef8970a23a2ddf75b47f48e032e9911d3c1",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/11-640.webp",
+        "width": 640,
+        "height": 427,
+        "size": 130396,
+        "sha256": "c928212601ef2327ce59950827ccb5e945a432a0da8f81a515fe4823dbe54a46"
+      },
+      {
+        "path": "public/images/chapter-3/11-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "size": 544932,
+        "sha256": "34f05b6d78990754b94e4088382d6127fb7a25bd6248fe603d57abf8243bf51a"
+      }
+    ]
+  },
+  {
+    "number": "13",
+    "file": "13 - Aremag surgit des profondeurs - V4 - VALIDEE.png",
+    "version": "V4",
+    "driveUrl": "https://drive.google.com/file/d/1khqz8Z2Nj4ftvkbNkvgi9_MQVaY1RXzT/view",
+    "size": 2962975,
+    "sha256": "e9849f1ee44c9034f62e8c636849ff062c3eacbc44ea0bd2c478ef7e2a828b74",
+    "dimensions": [
+      1942,
+      809
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/13-640.webp",
+        "width": 640,
+        "height": 267,
+        "size": 85392,
+        "sha256": "5c9bd4526f476cad9fd7ac5400f9b9c11dc5bed863d91e3a6d676bb5203e6304"
+      },
+      {
+        "path": "public/images/chapter-3/13-1942.webp",
+        "width": 1942,
+        "height": 809,
+        "size": 492160,
+        "sha256": "fc550525667587857b7160579f2215f459d769a5f9773e967ef01dce58a4cc22"
+      }
+    ]
+  },
+  {
+    "number": "15",
+    "file": "15 - La Sagesse des Mers se brise - V3 - VALIDEE.png",
+    "version": "V3",
+    "driveUrl": "https://drive.google.com/file/d/1NXxBe-rhrerubgWBVo5HNz4lY4ZJRq4G/view",
+    "size": 3350090,
+    "sha256": "e4b7910744c648d7c269212a65ba2a441436c6627af5294724dd4830bc10b0e9",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "variants": [
+      {
+        "path": "public/images/chapter-3/15-640.webp",
+        "width": 640,
+        "height": 360,
+        "size": 127282,
+        "sha256": "dad566fc8953ac7958a68d269f623f3d0426a850277c2d887cf213fc4ede6c3f"
+      },
+      {
+        "path": "public/images/chapter-3/15-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "size": 552194,
+        "sha256": "f18529855dd3bc9000cea00471b5dd8191661df212ba3b11aad9eb8c482abba7"
+      }
+    ]
+  }
+]

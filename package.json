@@ -10,7 +10,7 @@
     "check": "astro check",
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0",
-    "test": "node --test tests/site.test.mjs tests/base-path.test.mjs",
+    "test": "node --test tests/site.test.mjs tests/base-path.test.mjs tests/chapter-3.test.mjs",
     "test:preview": "node --test tests/preview.test.mjs"
   },
   "dependencies": {
