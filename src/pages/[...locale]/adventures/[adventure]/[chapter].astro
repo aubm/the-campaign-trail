@@ -75,8 +75,8 @@ const { Content, headings } = await render(chapter);
         srcset={withBaseSrcset(chapter.data.illustration.srcset)}
         sizes="(max-width: 850px) calc(100vw - 48px), (max-width: 1256px) calc(100vw - 96px), 1160px"
         alt={chapter.data.illustration.alt}
-        width="1672"
-        height="941"
+        width={chapter.data.illustration.width ?? 1672}
+        height={chapter.data.illustration.height ?? 941}
         fetchpriority="high"
       />
       {chapter.data.illustration.caption && (
