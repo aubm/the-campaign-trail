@@ -91,15 +91,40 @@ test("approved WebP variants match their manifest and retain native aspect ratio
   }
 });
 
-test("chapter three has an honest English placeholder and correct chapter boundaries", async () => {
+test("chapter three publishes the complete illustrated story in English with matching navigation", async () => {
   const english = await page();
-  assert.match(english, /class="translation-notice"/);
+  const french = await page("fr");
+  assert.equal((english.match(/<h2\b/g) || []).length, 6);
+  assert.ok(!english.includes('class="translation-notice"'));
   assert.ok(!english.includes("Jana avait cessé de compter les jours"));
-  assert.equal(chapterImages(english).length, 1);
-  const frRoute = `/fr/adventures/${adventure}/${slug}/`;
-  const notice = english.match(/<aside class="translation-notice"[\s\S]*?<\/aside>/)?.[0];
-  assert.ok(notice?.includes(`href="${frRoute}"`));
-  assert.ok(notice?.includes('hreflang="fr"'));
+  assert.ok(!english.includes("An English translation is coming soon."));
+  assert.deepEqual(
+    chapterImages(english).map((tag) => attr(tag, "src")),
+    chapterImages(french).map((tag) => attr(tag, "src")),
+    "The approved illustrations must appear in the same order in both languages",
+  );
+  assert.equal(chapterImages(english).length, 13);
+  for (const t of [
+    "The Wisdom of the Seas",
+    "Jana had stopped counting the days",
+    "The Captain's Table",
+    "The First Assault",
+    "The Last Glimpse",
+    "The hull gave way.",
+    "She thought of Celeborn.",
+    "She reached towards the light.",
+    "Then she saw nothing more.",
+  ]) assert.ok(english.includes(t), "Missing translated chapter text: " + t);
+  for (const term of ["Maîîî", "Lathandre", "Le pain de Ghaar", "Les premiers grappins", "Les derniers jours de mer"]) {
+    assert.ok(!english.includes(term), "French text leaked into the English chapter: " + term);
+  }
+  const source = await readFile(resolve("src/content/chapters/" + adventure + "/" + slug + ".md"), "utf8");
+  assert.ok(!source.includes("translationPending: true"));
+  assert.match(source, /^order: 3$/m);
+  assert.match(source, /^sample: false$/m);
+  const narrative = source.split("---").slice(2).join("---").replace(/<figure\b[\s\S]*?<\/figure>/g, "");
+  assert.ok(narrative.trim().endsWith("Then she saw nothing more."));
+  assert.ok(narrative.split(/\s+/).length > 3500, "The English story must not be an abridgement");
   for (const prefix of ["", "fr"]) {
     const routePrefix = prefix ? "/fr" : "";
     const chapter = await page(prefix);
