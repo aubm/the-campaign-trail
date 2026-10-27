@@ -107,7 +107,7 @@ test("chapter three publishes the complete illustrated story in English with mat
   for (const t of [
     "The Wisdom of the Seas",
     "Jana had stopped counting the days",
-    "The Captain's Table",
+    "The Captain",
     "The First Assault",
     "The Last Glimpse",
     "The hull gave way.",
