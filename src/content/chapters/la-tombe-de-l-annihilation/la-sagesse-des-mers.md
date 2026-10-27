@@ -429,3 +429,177 @@ The spyglass disappeared into the captain's pocket.
 “Everyone to your posts!” Bran ordered.
 
 ---
+
+## The First Assault
+
+*Moments later · between the two ships*
+
+The first grappling hook struck the deck with a clang of iron.
+
+A sailor rushed to free the rope. Another hook caught the wood farther away, and the enemy vessel gave theirs a sudden pull.
+
+Jana caught herself against the rail.
+
+Figures moved on the other deck. One of the pirates leapt across, landed on one knee aboard the Wisdom of the Seas and immediately raised his weapon. Behind him, others were already looking for a way over.
+
+“Drive them back!” Doran shouted.
+
+The din almost drowned out her order.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/06-1672.webp" srcset="/images/chapter-3/06-640.webp 640w, /images/chapter-3/06-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="The first pirate lands on the deck of the Wisdom of the Seas as grappling hooks and taut ropes bind the two ships together and Doran calls orders." />
+  <figcaption>The First Grappling Hooks.</figcaption>
+</figure>
+
+A sailor fell beneath a blow. Jana ran towards him, but another pirate blocked her path. She raised her hand.
+
+“Lathander, protect them!”
+
+A flash of light struck the pirate. He stumbled back, one arm shielding his face. Jana passed him, knelt beside the sailor and saw blood soaking through his sleeve.
+
+“Leave me. They're coming back,” the sailor gasped.
+
+“Not a chance,” Jana said.
+
+She placed her palm against the wound. A golden warmth passed between her fingers; the bleeding slowed. When the sailor managed to sit up, she took his arm and led him back behind the other defenders.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/07-1671.webp" srcset="/images/chapter-3/07-640.webp 640w, /images/chapter-3/07-1671.webp 1671w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1671" height="941" loading="lazy" decoding="async" alt="Kneeling beside an injured sailor, Jana heals his arm with a gentle golden light beneath her palm while the fighting continues behind them." />
+  <figcaption>Jana Helps a Wounded Sailor.</figcaption>
+</figure>
+
+Farther away, two men from the enemy ship were pulling on a rope attached to a grappling hook. A third was preparing a plank to span the gap between the hulls. From the other deck, a pirate directed the operation, signalling when they should pull the rope taut.
+
+Zarraï had backed towards a wooden post. He watched the men's movements, then the rope tightening with every roll of the ships. Doran shouted that they had to hold the stern. As long as the hook remained in place, the pirates could draw the two vessels together.
+
+An armed man was guarding the end of the rope a few paces from Zarraï. He could not reach it without being noticed.
+
+Zarraï looked up at the pirate directing the manoeuvre on the other ship.
+
+His lips barely moved.
+
+Amid the clash of weapons, nobody seemed to hear the few discordant notes he murmured. Nobody except his target.
+
+The pirate clapped his hands to his head. He staggered as though something unbearable were whispering in his ear. Then he turned and fled towards the stern of his own ship, as far from Zarraï as the deck would allow.
+
+The two men holding the rope looked for their leader. They kept pulling all the same. The armed pirate watching Zarraï turned away as well, startled by the inexplicable flight.
+
+Zarraï seized his chance. He drew his rapier and slipped up to the still-taut rope. He slid the slender blade beneath several strands and pulled sharply, just as the hulls drifted apart.
+
+The rope snapped.
+
+The plank being pushed between the ships tipped before it could be secured. The pirates had to jump back to avoid following it into the water. A gap opened in the boarding assault, long enough for Doran to bring several sailors into position.
+
+Zarraï let the cut end of the rope fall. His sleeve had slipped; he immediately pulled it back down to his wrist.
+
+“Well done!” Doran shouted.
+
+He answered with a small nod.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/08-1672.webp" srcset="/images/chapter-3/08-640.webp 640w, /images/chapter-3/08-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Zarraï cuts a taut rope with his rapier. An unsecured boarding plank tips while a pirate retreats across the other ship, hands pressed to his head." />
+  <figcaption>Zarraï Seizes an Opening.</figcaption>
+</figure>
+
+Near the mainmast, Ghaar spotted two pirates who had managed to climb aboard from the opposite side.
+
+“Maaaaster! Behind! Behind them!”
+
+Erdan, who had remained near the stairs, spun round at once.
+
+“I see them, Ghaar. Keep that one busy.”
+
+The familiar gave a rough cackle and swooped down upon the nearer attacker. He clung to the man's hair, spread his wings over his eyes and, to block his sight completely, planted his rear end against the pirate's nose.
+
+The man screamed, dropped his weapon and groped to tear the creature from his face. Even Jana, several paces away, caught a smell rather less pleasant than the sea air.
+
+Erdan took advantage of the distraction. He raised his hand.
+
+A crackling bolt of energy zigzagged through the air and struck the pirate squarely in the chest. The man arched under the impact; flinging out his arms to recover his balance, he sent Ghaar flying across the deck. The small winged body finished its journey against a crate with a dull thud.
+
+“Very nicely done, Maaaaster…”
+
+Ghaar tried to get up, his snout crooked and his wings crumpled.
+
+Erdan gave a sudden laugh, almost delighted.
+
+“Ha! You've chosen the wrong ship!”
+
+He had already turned his attention to the second pirate, who was retreating behind a crate, without looking to see where his familiar had landed.
+
+“Maaaaster… my wings…”
+
+“You're very brave, my little Ghaar. Truly remarkable,” Erdan declared.
+
+He spoke with affectionate pride, yet did not spare him a glance. Still unsteady, Ghaar made his painful way back to his shoulder.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/09-1672.webp" srcset="/images/chapter-3/09-640.webp 640w, /images/chapter-3/09-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Erdan strikes a pirate in the chest with an energy bolt, and the pirate's flailing arms send the little Ghaar flying towards a crate." />
+  <figcaption>Erdan and Poor Ghaar.</figcaption>
+</figure>
+
+The first pirates were falling back. But several had regrouped near the bow, where the rail left little room to fight. One knocked a sailor to the deck. Two more advanced behind him.
+
+Doran stepped between them and the defenders, her weapon raised. The first pirate feigned retreat before striking her beneath the arm. The half-orc faltered. She turned towards Adwayria, seemingly surprised to find her there, then fell to her knees in front of her.
+
+Adwayria tried to support her. Doran's legs gave way; she collapsed against the druid. Blood ran between Adwayria's fingers as she tried to lift the first mate's head.
+
+“Doran?”
+
+The first mate did not answer. Her gaze was fixed. Adwayria called her name again, louder this time.
+
+Ahead of them, the pirates were still advancing.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/10-1670.webp" srcset="/images/chapter-3/10-640.webp 640w, /images/chapter-3/10-1670.webp 1670w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1670" height="941" loading="lazy" decoding="async" alt="Adwayria tries to hold Doran as the half-orc collapses against her, blood staining her shirt beneath the arm, while pirates close in behind them." />
+  <figcaption>Doran Falls.</figcaption>
+</figure>
+
+Jana dragged the wounded sailor out of their path.
+
+Adwayria sprang to her feet, leaving Doran stretched out on the deck.
+
+“GET BACK!”
+
+She planted her feet on the planks and held out both hands.
+
+The air seemed to draw tight before her.
+
+A thunderclap erupted, so violent that Jana felt its force in her chest. Ropes whipped across the deck; an abandoned bucket went rolling. The pirates were hurled backwards. Three of them went over the rail and vanished into the water.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/11-1536.webp" srcset="/images/chapter-3/11-640.webp 640w, /images/chapter-3/11-1536.webp 1536w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1536" height="1024" loading="lazy" decoding="async" alt="With Doran lying behind her, Adwayria extends both hands and throws pirates over the rail; water and ropes on the deck are driven by the blast." />
+  <figcaption>Adwayria's Wrath.</figcaption>
+</figure>
+
+The silence that followed lasted barely a second.
+
+“By the gods!” a sailor exclaimed.
+
+Adwayria stared at the ship's edge, her hands still outstretched. Then her eyes returned to Doran, still lying at her feet.
+
+She knelt without a word. Jana joined her, pressed two fingers to the half-orc's neck and raised her eyes to Adwayria. The look was answer enough.
+
+Another attacker appeared. Jana took Adwayria by the shoulder and pulled her towards the middle of the deck.
+
+“Adwayria. Don't stay there!”
+
+Bran's sailors regained some of the ground they had lost. On the enemy vessel, Zaroum had not moved from his post. He was still watching, beyond their reach, while his men tried to regroup.
+
+“Don't pursue them! Hold the deck!” Bran ordered.
+
+Jana returned to the others. She counted them almost without meaning to: Adwayria, Zarraï, Erdan. Ghaar was still clinging to Erdan's shoulder.
+
+“Have we won?” Adwayria asked.
+
+The answer came from another direction.
+
+A rumble was rising from beneath the sea.
+
+At first Jana thought it was the sound of the two hulls scraping together. But it went on after the ships had stopped moving against one another.
+
+The deck trembled beneath her feet.
+
+Then the shouting ceased, one cry at a time.
+
+---
