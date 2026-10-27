@@ -2,7 +2,7 @@
 locale: fr
 title: "La Tombe de l’annihilation"
 subtitle: "Une campagne vécue autour de la table, racontée chapitre après chapitre."
-description: "Notre chronique de La Tombe de l’annihilation, inspirée d’une campagne de D&D jouée entre juillet 2021 et septembre 2023. Découvrez le prologue, Le Chant de l’Elfe et Les passagers."
+description: "Notre chronique de La Tombe de l’annihilation, inspirée d’une campagne de D&D jouée entre juillet 2021 et septembre 2023. Du prologue aux trois premiers chapitres illustrés, dont La Sagesse des Mers."
 order: 1
 setting: "Chult · Royaumes Oubliés"
 illustration:
@@ -17,7 +17,7 @@ Cette chronique en cours de publication raconte **notre aventure**, celle des pe
 
 Tout commence **trois ans avant la campagne**. L’archéologue Erdan Naïlo et ses compagnons atteignent Omu, une cité perdue que la jungle a lentement engloutie. Ce qu’ils y découvrent changera à jamais le cours de leur histoire.
 
-Je publierai la suite **chapitre après chapitre**. Le prologue est disponible en français et en anglais. Le premier chapitre, **Le Chant de l’Elfe**, est illustré et disponible lui aussi en français et en anglais. Le deuxième chapitre, **Les passagers**, est également disponible dans les deux langues.
+Je publierai la suite **chapitre après chapitre**. Le prologue est disponible en français et en anglais. Le premier chapitre, **Le Chant de l’Elfe**, est illustré et disponible lui aussi en français et en anglais. Le deuxième chapitre, **Les passagers**, est également disponible dans les deux langues. Le troisième chapitre, **La Sagesse des Mers**, est maintenant disponible en français avec treize illustrations ; sa traduction anglaise reste à venir.
 
 <aside class="spoiler-warning" role="note" aria-label="Avertissement sur les spoilers">
   <strong>Attention — spoilers sur le module officiel.</strong>
