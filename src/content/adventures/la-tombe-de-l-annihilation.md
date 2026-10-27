@@ -1,7 +1,7 @@
 ---
 title: "Tomb of Annihilation"
 subtitle: "A campaign remembered, one chapter at a time."
-description: "Our campaign chronicle inspired by Tomb of Annihilation, played from 2021 to 2023. Read the prologue and first two chapters in English and French; chapter three is now illustrated in French."
+description: "Our campaign chronicle inspired by Tomb of Annihilation, played from 2021 to 2023. Read the prologue and the first three illustrated chapters in English and French."
 order: 1
 setting: "Chult · Forgotten Realms"
 illustration:
@@ -16,7 +16,7 @@ This ongoing chronicle retells **our adventure** through the experiences of our 
 
 The story begins three years earlier, when the archaeologist Erdan Naïlo and his companions reach the lost city of Omu.
 
-**The prologue is available in English and French.** So are the illustrated first chapter, **The Elfsong**, and the second chapter, **The Passengers**. The third chapter, **The Wisdom of the Seas**, is now available in French with thirteen illustrations; its English translation is pending. New chapters and original illustrations will be added progressively.
+**The prologue is available in English and French.** So are the illustrated first chapter, **The Elfsong**, and the second chapter, **The Passengers**. The third chapter, **The Wisdom of the Seas**, is available in both languages with thirteen original illustrations. New chapters and original illustrations will be added progressively.
 
 <aside class="spoiler-warning" role="note" aria-label="Spoiler warning">
   <strong>Spoiler warning — official adventure.</strong>
