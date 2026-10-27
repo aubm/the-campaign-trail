@@ -603,3 +603,125 @@ The deck trembled beneath her feet.
 Then the shouting ceased, one cry at a time.
 
 ---
+
+## What Rises from Below
+
+*Evening · the sea between the ships*
+
+In the sudden silence, the wind went on filling the sails.
+
+Jana heard water slapping against the hull. Then a voice rang out.
+
+It came from neither the pirate ship nor Bran's. It seemed to rise from the sea itself, deep and slow, so powerful that she could not tell where it was speaking from.
+
+The words were unfamiliar to Jana.
+
+She looked at Bran. All trace of the old dwarf's smile was gone.
+
+“What is it?”
+
+He did not answer.
+
+The water rose between the two ships.
+
+Something enormous was moving beneath the surface. A curved shape covered in plates emerged amid the foam. For a moment, Jana could make out neither head nor limbs: only a shell so vast that she could not understand how any creature could carry it.
+
+Then a dark mass rose after it.
+
+Sailors stumbled backwards. On the other ship, the pirates were running from one end of the deck to the other. The fighting was over; no one was thinking of renewing the boarding assault.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/13-1942.webp" srcset="/images/chapter-3/13-640.webp 640w, /images/chapter-3/13-1942.webp 1942w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1942" height="809" loading="lazy" decoding="async" alt="An immense dragon turtle rises through the foam between the white-sailed Wisdom of the Seas and the black-sailed pirate ship, dwarfing both crews." />
+  <figcaption>What Rises from Below.</figcaption>
+</figure>
+
+“Captain!” a sailor shouted.
+
+Bran grabbed a rope to keep his balance.
+
+“Get away from the rail!”
+
+A movement swept through the water, as though the whole sea were trying to turn itself over.
+
+The Wisdom of the Seas rose.
+
+Jana felt the deck fall away beneath her feet. She struck the rail and held on with all her strength. The lanterns swung, casting enormous shadows across the sails.
+
+Farther away, the pirate ship was already turning onto a different course. Men hurried to free the ropes and manoeuvre to escape. Jana caught one last glimpse of the motionless figure on its deck.
+
+Then the creature moved between them, hiding him from her sight.
+
+“Sagesse!” Adwayria cried.
+
+The wolf had slipped on the planks. Bran reached her, bent over her, then raised his head towards his guests.
+
+“We have to abandon ship!”
+
+He pointed towards the stern, where the crew were trying to reach the lifesaving equipment.
+
+“You have to make it to Syndra! Do you hear me?”
+
+Jana tried to move closer.
+
+Bran glanced towards the place on the deck where Doran still lay. Then he turned to the sailors who were still at their posts.
+
+“Come with us!”
+
+“Passengers first! Get them down!” Bran ordered.
+
+Another impact cut them off.
+
+This time, the sound was like nothing Jana had ever heard. A long, deep crack, a howl of timber being torn apart.
+
+The hull gave way.
+
+---
+
+## The Last Glimpse
+
+*At that same moment · aboard the Wisdom of the Seas*
+
+Jana lost her grip.
+
+The deck tilted so violently that she slid several paces before striking an obstacle. She reached out, found a rope and clung to it.
+
+Water was surging up between the split planks.
+
+Someone shouted her name.
+
+She searched for Adwayria, then Zarraï and Erdan. Figures passed in front of her, vanished behind a torn sail, then appeared for an instant in the lantern light.
+
+There was no longer a line to defend, no enemy to drive back. Only the ship coming apart around them.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/15-1672.webp" srcset="/images/chapter-3/15-640.webp 640w, /images/chapter-3/15-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="The deck breaks apart beneath the travellers: Jana clings to a rope, separated from Adwayria, Zarraï and Erdan by rushing water, split planks and a torn sail." />
+  <figcaption>The Wisdom of the Seas Breaks Apart.</figcaption>
+</figure>
+
+Jana caught sight of Bran near the mast. A patch of white moved at his side.
+
+“Bran!” Jana shouted.
+
+He raised an arm.
+
+Jana would never know whether he meant to answer her or point to a way out.
+
+A wave crashed over the deck.
+
+She had just enough time to close her eyes before the water struck her. Her hand slipped from the rope. Cold enveloped her, followed by a muffled roar.
+
+She tried to swim upwards.
+
+There was no longer up or down, only bubbles, debris, and the sensation of a current too powerful to let her choose a direction.
+
+She opened her eyes. A glimmer danced somewhere above her.
+
+She thought of Celeborn.
+
+Of Port Nyanzaru, which she had never reached.
+
+Of her three companions, whose fate she could not know.
+
+She reached towards the light.
+
+Then she saw nothing more.
