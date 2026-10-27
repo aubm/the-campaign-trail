@@ -358,3 +358,74 @@ Another sound followed, then a voice none of them could make out.
 The ship's bell began to ring.
 
 ---
+
+## A Sail on the Horizon
+
+*Nightfall · off Port Nyanzaru*
+
+Doran opened the door without knocking.
+
+“Bran. A ship's coming towards us.”
+
+The captain was already on his feet.
+
+“Her flag?” Bran asked.
+
+“None I recognise,” Doran replied.
+
+Bran took his spyglass from a shelf and headed for the deck. His guests followed. Sagesse slipped between their legs, then climbed up behind her master.
+
+Outside, the western sky was still light. A dark silhouette was gaining on them rapidly across the water.
+
+The sailors had abandoned their ordinary conversations. Orders travelled from one end of the deck to the other; a rope was retied, a crate moved, a better place sought from which to watch the approaching ship.
+
+Bran raised the spyglass to his eye.
+
+He stood motionless.
+
+“Well?” Doran pressed.
+
+“Zaroum,” Bran said.
+
+Doran turned sharply towards him.
+
+<figure class="story-illustration">
+  <img src="/images/chapter-3/05-1672.webp" srcset="/images/chapter-3/05-640.webp 640w, /images/chapter-3/05-1672.webp 1672w" sizes="(max-width: 600px) calc(100vw - 48px), (max-width: 850px) calc(100vw - 258px), (max-width: 1106px) calc(100vw - 396px), 710px" width="1672" height="941" loading="lazy" decoding="async" alt="Bran looks through a spyglass towards an approaching ship with black sails at sunset, while Doran stands beside him." />
+  <figcaption>Zaroum on the Horizon.</figcaption>
+</figure>
+
+“Who's that?” Jana asked.
+
+Bran lowered the spyglass.
+
+“A pirate. And certainly not someone I was hoping to invite to dinner.”
+
+“You know him?” Zarraï asked.
+
+“Well enough to know he isn't here to ask for directions,” Bran replied.
+
+He pointed to the figure standing on the other deck, some distance from the men at work on the rigging.
+
+“There he is. But it's his men who'll be coming over to us.”
+
+As the two ships drew closer, Jana began to make out armed figures, then blades catching the last rays of daylight.
+
+Adwayria could not take her eyes off the other ship.
+
+“Are they going to come aboard?”
+
+“If they can,” Doran retorted.
+
+The first mate called an order to her sailors.
+
+Bran turned to his passengers.
+
+“You didn't sign on to fight my enemies. If you can stay under cover, do.”
+
+A blow rang against the hull, followed by a shout.
+
+The spyglass disappeared into the captain's pocket.
+
+“Everyone to your posts!” Bran ordered.
+
+---
